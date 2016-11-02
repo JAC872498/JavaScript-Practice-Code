@@ -15,4 +15,5 @@ function palindrome(wrd){
   return true;
 }
 
-console.log(palindrome("word"));
+console.log(palindrome("word"));//Prints false
+console.log(palindrome("bob"));//Prints true
