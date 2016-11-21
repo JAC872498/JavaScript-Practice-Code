@@ -11,4 +11,5 @@ var backArr=[];
 for(var x=arr.length-1;x>=0;x--){
   backArr[arr.length-(x+1)]=arr[x];
 }
-console.log(backArr);
+var backWrd=backArr.join("");
+console.log(backWrd);
