@@ -1,8 +1,8 @@
 /*This takes a end date and calculates how many days remaining until that day(including that day and today)*/
 
-var endYear=2020;
-var endMonth=7;
-var endDay=15;
+var endYear=prompt("Enter the end year.");
+var endMonth=prompt("Enter the end month(in number form).");
+var endDay=prompt("Enther the end day.");
 var year=new Date().getYear()+1900;
 var month=new Date().getMonth()+1;
 var day=new Date().getDate();
@@ -50,4 +50,8 @@ trueLoop: while(true){
     year++;
   }
 }
-console.log(tot);
+if(endYear<year||(endYear==year &&  endMonth<month)||(endYear==year && endMonth==month && endDay<=day)){
+   console.log("That day is either in the past or is today.");
+}else{
+   console.log("There are "+tot+" days left until "+endDay+"/"+endMonth+"/"+endYear);
+}
