@@ -1,10 +1,5 @@
 /*This takes a end date and calculates how many days remaining until that day(including that day and today)*/
 
-function leapYear(year){
-  return(year%400==0 ||(year%4==0 && year%100!=0));
-}
-
-
 var endYear=2020;
 var endMonth=7;
 var endDay=15;
@@ -30,7 +25,7 @@ trueLoop: while(true){
       }
     }
   }else{
-    if(leapYear(year)){
+    if(year%400==0 ||(year%4==0 && year%100!=0)){
       while(day<29){
         day++;
         tot++;
