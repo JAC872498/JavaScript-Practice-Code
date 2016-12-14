@@ -3,9 +3,15 @@
 var endYear=prompt("Enter the end year.");
 var endMonth=prompt("Enter the end month(in number form).");
 var endDay=prompt("Enther the end day.");
-var year=new Date().getYear()+1900;
-var month=new Date().getMonth()+1;
-var day=new Date().getDate();
+if(prompt("Do you want to use today as a starting day?").toUpperCase()=="YES"){
+  var year=new Date().getYear()+1900;
+  var month=new Date().getMonth()+1;
+  var day=new Date().getDate();
+}else{
+  var year=
+  var month=
+  var day=
+}
 var tot=1;
 trueLoop: while(true){
   if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){
