@@ -8,7 +8,7 @@ if(prompt("Do you want to use today as a starting date?").toUpperCase()=="YES"){
   var month=new Date().getMonth()+1;
   var day=new Date().getDate();
 }else{
-  var year=prompt("Enter the starting year.");//This is a couple days behind for some reason
+  var year=prompt("Enter the starting year.");
   var month=prompt("Enter the starting month(in number from).");
   var date=prompt("Enter the starting day.");
 }
