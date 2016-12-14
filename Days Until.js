@@ -10,7 +10,7 @@ if(prompt("Do you want to use today as a starting date?").toUpperCase()=="YES"){
 }else{
   var year=prompt("Enter the starting year.");
   var month=prompt("Enter the starting month(in number from).");
-  var date=prompt("Enter the starting day.");
+  var day=prompt("Enter the starting day.");
 }
 var tot=1;
 trueLoop: while(true){
