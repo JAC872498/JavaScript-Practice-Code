@@ -3,14 +3,14 @@
 var endYear=prompt("Enter the end year.");
 var endMonth=prompt("Enter the end month(in number form).");
 var endDay=prompt("Enther the end day.");
-if(prompt("Do you want to use today as a starting day?").toUpperCase()=="YES"){
+if(prompt("Do you want to use today as a starting date?").toUpperCase()=="YES"){
   var year=new Date().getYear()+1900;
   var month=new Date().getMonth()+1;
   var day=new Date().getDate();
 }else{
-  var year=
-  var month=
-  var day=
+  var year=prompt("Enter the starting year.");//This is a couple days behind for some reason
+  var month=prompt("Enter the starting month(in number from).");
+  var date=prompt("Enter the starting day.");
 }
 var tot=1;
 trueLoop: while(true){
@@ -56,7 +56,7 @@ trueLoop: while(true){
     year++;
   }
 }
-if(endYear<year||(endYear==year &&  endMonth<month)||(endYear==year && endMonth==month && endDay<=day)){
+if(endYear<year||(endYear<=year &&  endMonth<month)||(endYear<=year && endMonth<=month && endDay<day)){
    console.log("That day is either in the past or is today.");
 }else{
    console.log("There are "+tot+" days left until "+endDay+"/"+endMonth+"/"+endYear);
