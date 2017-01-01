@@ -1,4 +1,4 @@
-/*This takes a price and a array of possible coins(in least to greadest) and gives the largest coins you could use.
+/*This takes a price and a array of possible coins and gives the largest coins you could use.
  
  Sample function : amountTocoins(46, [25, 10, 5, 2, 1])
 Here 46 is the amount. and 25, 10, 5, 2, 1 are coins. 
