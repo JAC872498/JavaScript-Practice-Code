@@ -4,7 +4,8 @@
 Here 46 is the amount. and 25, 10, 5, 2, 1 are coins. 
 Output : 25, 10, 10, 1*/
 
-function coin(total, coins){
+function coin(total, arr){
+  var coins=arr.sort(function(a, b){return a-b})
   var num;
   var str="You would need a coin of ";
   while(total>0){
@@ -19,4 +20,4 @@ function coin(total, coins){
   }
   console.log(str);
 }
-coin(46,[1,5,10,25])
+coin(46,[5,25,1,10])
