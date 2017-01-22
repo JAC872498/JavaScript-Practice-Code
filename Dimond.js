@@ -1,5 +1,6 @@
 var wrd="";
-for(var x=0;x<5;x++){
+var num=prompt("Enter number.");
+for(var x=0;x<num;x++){
   for(var y=x;y<=5;y++){
     wrd+=" ";
   }
@@ -8,7 +9,7 @@ for(var x=0;x<5;x++){
   }
   wrd+="\n";
 }
-for(var x=5;x>0;x--){
+for(var x=num;x>0;x--){
   for(var y=x;y<=5;y++){
     wrd+=" ";
   }
