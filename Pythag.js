@@ -1,1 +1,1 @@
-
+var choice=prompt("");
