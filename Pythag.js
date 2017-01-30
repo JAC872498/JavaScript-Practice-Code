@@ -6,9 +6,9 @@ if(choice==1){
 }else if(choice==2){
 	var A=prompt("Enter side A.");
 	var C=prompt("Enter side C.");
-	console.log("Side B is "+(Math.sqrt(C*2-A*2))+".";
+	console.log("Side B is "+(Math.sqrt(C*2-A*2))+".");
 }else if(choice==3){
 	var A=prompt("Enter side A.");
 	var B=prompt("Enter side B.");
-	console.log("Side C is "+(Math.sqrt(B*2+A*2))+".";
+	console.log("Side C is "+(Math.sqrt(B*2+A*2))+".");
 }
