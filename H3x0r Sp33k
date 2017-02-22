@@ -1,1 +1,23 @@
+function sp33k(wrd){
+  var newWrd="";
+  var arr=wrd.split("");
+  for(var x=0;x<wrd.length;x++){
+    if(arr[x].toUpperCase()=="A"){
+      
+    }else if(arr[x].toUpperCase()=="E"){
+      
+    }else if(arr[x].toUpperCase()=="I"){
+      
+    }else if(arr[x].toUpperCase()=="L"){
+      
+    }else if(arr[x].toUpperCase()=="O"){
+      
+    }else{
+      
+    }
+  }
+  return newWrd;
+}
 
+var wrd="abcdefghigjlmnopqrstuvwxyz";
+console.log(sp33k(wrd));
