@@ -10,9 +10,12 @@ function GCD(num1){
 }
 
 var choice=prompt("Enter 1 for degree->radian and 2 for radian->degree.");
-var num=prompt("Enter the starting number.");
 if(choice==1){//degree->radian
+  var num=prompt("Enter the starting number.");
   console.log(GCD(num)[0]+"π/"+GCD(num)[1]);
 }else{//radian->degree
-  console.log(GCD());
+  var num=prompt("Enter the starting fraction without pi.");
+  var num1=;
+  var num2=;
+  console.log(num);
 }
