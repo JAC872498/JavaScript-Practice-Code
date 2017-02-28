@@ -14,5 +14,5 @@ var num=prompt("Enter the starting number.");
 if(choice==1){//degree->radian
   console.log(GCD(num)[0]+"π/"+GCD(num)[1]);
 }else{//radian->degree
-  console.log("MAYMAY");
+  console.log(GCD());
 }
