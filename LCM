@@ -1,18 +1,24 @@
 /**/
 
 function LCM(d){
-  var low=d[0],num=0;
+  var low=d[0],num=0,works=true;
   for(var x=0;x<len(d);x++){
     if(d[x]<low){
       low=d[x];
     }
   }
   while(true){
+    works=true;
     num+=low;
     for(var x=0;x<len(d);x++){
-      
+      if(num%d[x]!=0){
+        works=false;
+      }
+    }
+    if(works){
+      return num;
     }
   }
 }
 var array=[5,10,8];
-console.log(LCM(array));
+console.log(LCM(array));    
