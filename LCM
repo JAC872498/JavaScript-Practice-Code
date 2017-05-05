@@ -1,7 +1,18 @@
 /**/
 
-def LCM(){
-  var num=0;
-  
-  return num;
+function LCM(d){
+  var low=d[0],num=0;
+  for(var x=0;x<len(d);x++){
+    if(d[x]<low){
+      low=d[x];
+    }
+  }
+  while(true){
+    num+=low;
+    for(var x=0;x<len(d);x++){
+      
+    }
+  }
 }
+var array=[5,10,8];
+console.log(LCM(array));
