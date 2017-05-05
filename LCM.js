@@ -1,4 +1,4 @@
-/**/
+/*This just finds the lowest common multiplier of all the numbers in 'array'*/
 
 function LCM(d){
   var low=d[0],num=0,works=true;
@@ -21,4 +21,4 @@ function LCM(d){
   }
 }
 var array=[5,10,8];
-console.log(LCM(array));    
+console.log(LCM(array));
