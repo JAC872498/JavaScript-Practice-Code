@@ -13,4 +13,4 @@ for(int x=0;x<instructions.length;x++){
   }else if(A){
     
   }
-}*/
+}
