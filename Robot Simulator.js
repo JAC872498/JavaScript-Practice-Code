@@ -21,13 +21,13 @@ for(var x=0;x<instructions.length;x++){
     direction=directions[currDir];
   }else if(instructions[x]=="A"){
     if(currDir==0){
-      
+      coords[0]-=1;
     }else if(currDir==1){
-      
+      coords[1]+=1;
     }else if(currDir==2){
-      
+      coords[0]+=1;
     }else if(currDir==3){
-      
+      coords[1]-=1;
     }
   }
 }
