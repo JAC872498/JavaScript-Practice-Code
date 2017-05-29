@@ -1,17 +1,19 @@
 function luhn(str){
 	str=str.replace(/\s+/g, '');
 	var newStr="";
+	var tot=0
 	for(var x=0;x<str.length;x++){
 		if(x%2==0){
 			if(str[x]*2>9){
-				newStr=newStr+((str[x]*2)-9);
+				tot+=((str[x]*2)-9);
 			}else{
-				newStr=newStr+(str[x]*2);
+				tot+=(str[x]*2);
 			}
 		}else{
-			newStr=newStr+str[x];
+			tot+=str[x];
 		}
 	}
+	return(tot%10==0)
 }
 console.log(luhn(prompt("XD")));
 console.log("8569247803833437");
