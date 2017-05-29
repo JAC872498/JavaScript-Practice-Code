@@ -1,1 +1,10 @@
 /**/
+
+var str=prompt("XD");
+for(var x=0;x<str.length;x++){
+	if(x%2!=0){
+
+	}else{
+		console.log(str[x]);
+	}
+}
