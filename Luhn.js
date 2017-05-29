@@ -1,3 +1,6 @@
+/*https://en.wikipedia.org/wiki/Luhn_algorithm
+I don't feel like typing out what it is*/
+
 function luhn(str){
 	str=str.replace(/\s+/g, '');
 	var tot=0
@@ -14,5 +17,6 @@ function luhn(str){
 	}
 	return(tot%10==0);
 }
-console.log(luhn(prompt("XD")));
-console.log("8569247803833437");
+
+console.log(luhn("4539 1488 0343 6467"));
+console.log(luhn("8273 1232 7352 0569"));
