@@ -16,3 +16,17 @@ for(var x=0;x<num;x++){
   console.log(wrd);
   wrd="";
 }
+for(var x=num-2;x>=0;x--){
+  for(var y=1;y<num-x;y++){
+    wrd+=" ";
+  }
+  for(var y=0;y<((x+1)*2)-1;y++){
+    if(y===0||y==((x+1)*2)-2){
+      wrd+=alph[x];
+    }else{
+      wrd+="*";
+    }
+  }
+  console.log(wrd);
+  wrd="";
+}
