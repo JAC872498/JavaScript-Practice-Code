@@ -1,4 +1,4 @@
-/**/
+/*Basicly the diamond shape thingy, but with letters instead of asterisks*/
 
 var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var num=prompt("Enter number."), wrd="";
