@@ -11,8 +11,16 @@ while(num>0){
     if(vals[x]<=num&&used<3){
       newNum+=signs[x];
       num-=vals[x];
+      if(signs[x]===newNum.split("")[newNum.length-2]){
+        used++;
+        console.log(used);
+      }else{
+        used=0;
+      }console.log(newNum);
     }else if(vals[x]<=num){
-      
+      used=0;
+      newNum+=signs[x+1]+signs[x];
+      num-=(vals[x+1]-vals[x]);
     }
   }
 }
