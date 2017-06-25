@@ -3,21 +3,11 @@ does it work 100%? probably not
 could it be optimized and cleaned up? definitely
 are there better places to do this? lots of them*/
 
-function getVal(a){
-  if(a==1||a==="I"){
-    return 0;
-  }else if(a==5||a==="V"){
-    return 1;
-  }else if(a==10||a==="X"){
-    return 2;
-  }else if(a==50||a==="L"){
-    return 3;
-  }else if(a==100||a=="C"){
-    return 4;
-  }else if(a==500||a==="D"){
-    return 5;
-  }else if(a==1000||a==="M"){
-    return 6;
+function getVal(a,b,c){
+  for(var x=0;x<=6;x++){
+    if(a==b[x]||a===c[x]){
+      return x;
+    }
   }
 }
 
