@@ -33,15 +33,13 @@ while(num>0){
     newNum+="CMXCIX";
   }
   for(var x=6;x>=0;x--){
-    //console.log(signs[x],vals[x]);
     if(vals[x]<=num){
       newNum+=signs[x];
       num-=vals[x];
     }
   }
   if(newNum.length>=4&&newNum.substring(newNum.length-1,newNum.length)===newNum.substring(newNum.length-2,newNum.length-1)&&newNum.substring(newNum.length-2,newNum.length)===newNum.substring(newNum.length-4,newNum.length-2)){
-    //console.log("Too long");
-    n=getVal(newNum.substring(newNum.length-1,newNum.length));
+    n=getVal(newNum.substring(newNum.length-1,newNum.length),vals,signs);
     newNum=newNum.substring(0,newNum.length-4);
     newNum+=signs[n]+signs[n+1];
   }
