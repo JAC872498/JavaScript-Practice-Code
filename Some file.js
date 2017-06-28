@@ -9,15 +9,18 @@ function change(wrd,n){
     }
   }
   num+=n;
-  while(num>26){
+  while(num>=26){
     num-=26;
   }
-  return(num);
+  return(alph[num]);
 }
 
 function cipher1(wrd,n){
   var newWrd="";
   for(var x=0;x<wrd.split('').length;x++){
-    newWrd=newWrd+change(wrd.split('')[x],n)
+    newWrd=newWrd+change(wrd.split('')[x],n);
   }
+  return(newWrd);
 }
+
+console.log(cipher1("abc",26))
