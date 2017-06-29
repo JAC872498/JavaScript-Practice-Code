@@ -18,6 +18,9 @@ function encrypt(wrd,n,key){
   var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var newWrd="";
   var num=0;
+  while(key.length<wrd.length){
+    key+=key;
+  }
   for(var x=0;x<wrd.split('').length;x++){
     num=getVal(wrd.split('')[x],alph);
     if(num==-1){
@@ -37,6 +40,9 @@ function decrypt(wrd,n,key){
   var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var newWrd="";
   var num=0;
+  while(key.length<wrd.length){
+    key+=key;
+  }
   for(var x=0;x<wrd.split('').length;x++){
     num=getVal(wrd.split('')[x],alph);
     if(num==-1){
@@ -53,5 +59,5 @@ function decrypt(wrd,n,key){
   return(newWrd);
 }
 
-console.log(encrypt("Rush Berlin on the fifth of July.",12345,"nab"));
-console.log(decrypt("zpob vylfch ih nby zcznb iz dofs.",12345,"nab"));
+console.log(encrypt("cba",806,"abc"));
+console.log(decrypt("cba",806,"abc"));
