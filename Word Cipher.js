@@ -3,11 +3,15 @@ http://exercism.io/exercises/javascript/simple-cipher/readme is a better explina
 
 function getVal(letter,alph){
   for(var i=0;i<alph.length;i++){
+    try{
+      if(letter.toLowerCase()===letter.toUpperCase()) return -1;
+    }catch(e){
+      return -1;
+    }
     if(letter.toLowerCase()===alph[i]){
       return i;
     }
   }
-  return(69);
 }
 
 function encrypt(wrd,n,key){
@@ -16,11 +20,16 @@ function encrypt(wrd,n,key){
   var num=0;
   for(var x=0;x<wrd.split('').length;x++){
     num=getVal(wrd.split('')[x],alph);
-    num+=n+getVal(key.split('')[x],alph);
-    while(num>=26){
-      num-=26;
+    if(num==-1){
+      newWrd=newWrd+wrd.split('')[x];
+      num=0;
+    }else{
+      num+=n+getVal(key.split('')[x],alph);
+      while(num>=26){
+        num-=26;
+      }
+      newWrd=newWrd+alph[num];
     }
-    newWrd=newWrd+alph[num];
   }
   return(newWrd);
 }
@@ -30,14 +39,19 @@ function decrypt(wrd,n,key){
   var num=0;
   for(var x=0;x<wrd.split('').length;x++){
     num=getVal(wrd.split('')[x],alph);
-    num-=n+getVal(key.split('')[x],alph);
-    while(num<0){
-      num+=26;
+    if(num==-1){
+      newWrd=newWrd+wrd.split('')[x];
+      num=0;
+    }else{
+      num-=n+getVal(key.split('')[x],alph);
+      while(num<0){
+        num+=26;
+      }
+      newWrd=newWrd+alph[num];
     }
-    newWrd=newWrd+alph[num];
   }
   return(newWrd);
 }
 
-console.log(encrypt("abc",12345,"nab"));
-console.log(decrypt("iwy",12345,"nab"));
+console.log(encrypt("Rush Berlin on the fifth of July.",12345,"nab"));
+console.log(decrypt("zpob uvylfch uih unby uzcznb uiz udofs.u",12345,"nab"));
