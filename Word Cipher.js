@@ -17,17 +17,11 @@ function encrypt(wrd,n,key){
     key+=key;
   }
   for(var x=0;x<wrd.split('').length;x++){
-    num=getVal(wrd.split('')[x],alph);
-    if(num==-1){
-      newWrd=newWrd+wrd.split('')[x];
-      num=0;
-    }else{
-      num+=n+getVal(key.split('')[x],alph);
-      while(num>=43){
-        num-=43;
-      }
-      newWrd=newWrd+alph[num];
+    num+=n+getVal(key.split('')[x],alph);
+    while(num>=44){
+      num-=44;
     }
+    newWrd=newWrd+alph[num];
   }
   return(newWrd);
 }
@@ -40,19 +34,13 @@ function decrypt(wrd,n,key){
   }
   for(var x=0;x<wrd.split('').length;x++){
     num=getVal(wrd.split('')[x],alph);
-    if(num==-1){
-      newWrd=newWrd+wrd.split('')[x];
-      num=0;
-    }else{
-      num-=n+getVal(key.split('')[x],alph);
-      while(num<0){
-        num+=43;
-      }
-      newWrd=newWrd+alph[num];
+    num-=n+getVal(key.split('')[x],alph);
+    while(num<0){
+      num+=44;
     }
+    newWrd=newWrd+alph[num];
   }
   return(newWrd);
 }
-
 console.log(encrypt("abcde 12345",806,"!?.,-_"));
 console.log(decrypt("35796vnprtq",806,"!?.,-_"));
