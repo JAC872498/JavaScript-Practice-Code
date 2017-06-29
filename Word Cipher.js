@@ -54,4 +54,4 @@ function decrypt(wrd,n,key){
 }
 
 console.log(encrypt("Rush Berlin on the fifth of July.",12345,"nab"));
-console.log(decrypt("zpob uvylfch uih unby uzcznb uiz udofs.u",12345,"nab"));
+console.log(decrypt("zpob vylfch ih nby zcznb iz dofs.",12345,"nab"));
