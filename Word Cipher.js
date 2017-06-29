@@ -1,4 +1,5 @@
-/**/
+/*This is a simple cipher that encrypts or decrypts a string based on a given number and string.
+http://exercism.io/exercises/javascript/simple-cipher/readme is a better explination of it*/
 
 function getVal(letter,alph){
   for(var i=0;i<alph.length;i++){
