@@ -3,11 +3,6 @@ http://exercism.io/exercises/javascript/simple-cipher/readme is a better explina
 
 function getVal(letter,alph){
   for(var i=0;i<alph.length;i++){
-    try{
-      if(letter.toLowerCase()===letter.toUpperCase()) return -1;
-    }catch(e){
-      return -1;
-    }
     if(letter.toLowerCase()===alph[i]){
       return i;
     }
@@ -15,7 +10,7 @@ function getVal(letter,alph){
 }
 
 function encrypt(wrd,n,key){
-  var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','0',' ','_','-','!','?','.',','];
   var newWrd="";
   var num=0;
   while(key.length<wrd.length){
@@ -28,8 +23,8 @@ function encrypt(wrd,n,key){
       num=0;
     }else{
       num+=n+getVal(key.split('')[x],alph);
-      while(num>=26){
-        num-=26;
+      while(num>=43){
+        num-=43;
       }
       newWrd=newWrd+alph[num];
     }
@@ -37,7 +32,7 @@ function encrypt(wrd,n,key){
   return(newWrd);
 }
 function decrypt(wrd,n,key){
-  var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  var alph=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','0',' ','_','-','!','?','.',','];
   var newWrd="";
   var num=0;
   while(key.length<wrd.length){
@@ -51,7 +46,7 @@ function decrypt(wrd,n,key){
     }else{
       num-=n+getVal(key.split('')[x],alph);
       while(num<0){
-        num+=26;
+        num+=43;
       }
       newWrd=newWrd+alph[num];
     }
@@ -59,5 +54,5 @@ function decrypt(wrd,n,key){
   return(newWrd);
 }
 
-console.log(encrypt("cba",806,"abc"));
-console.log(decrypt("cba",806,"abc"));
+console.log(encrypt("abcde 12345",806,"!?.,-_"));
+console.log(decrypt("35796vnprtq",806,"!?.,-_"));
