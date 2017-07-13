@@ -4,6 +4,7 @@ function fib(n,nums=[0,1]){
   if(n==0){
     return(nums);
   }
-  nums.push([nums.length-1]+[nums.length-2]);
+  nums.push(nums[nums.length-1]+nums[nums.length-2]);
+  return(fib(n-1,nums));
 }
-console.log(x);
+console.log(fib(5));
