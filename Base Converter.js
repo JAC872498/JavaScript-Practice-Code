@@ -1,8 +1,8 @@
-/**/
+/*This takes a base 10 number and converts it into a given base*/
 
-var num=252;
+var num=252;//Base 10 number you want to convert
+var base=2;//Base you want the result to be in
 var newNum=1;
-var base=2;
 var baseNums=[1];
 var used=2;
 var tot=0;
