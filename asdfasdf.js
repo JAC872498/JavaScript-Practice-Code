@@ -1,17 +1,18 @@
 /**/
 
-var number=20;
+var num=123;
 var newNum=0;
 var base=2;
-for(var n=0;n<number;n++){
-  newNum+=1;
-  for(var x=1;x<=(number.toString()).length;x++){
-  //console.log(Math.floor((test1%(10**x)/(10**(x-1)))));
-    if(Math.floor((newNum%(10**x)/(10**(x-1))))>=base){
-    //console.log(Math.floor((test1%(10**x)/(10**(x-1)))));
-      newNum-=(10**(x-1)*base);
-      newNum+=(10**x);
-    }
-  }
+var baseNums=[1];
+var used=0;
+while(baseNums[baseNums.length-1]<num/base){
+  baseNums.push(baseNums[baseNums.length-1]*base);
 }
-console.log(newNum);
+console.log(baseNums);
+for(var n=baseNums.length-1;n>=0;n--){
+  if(num>baseNums[n]&&used<base)){
+    newNum+=(10**n);
+    used++;
+  }
+  used=0;
+}
