@@ -12,12 +12,11 @@ while(baseNums[baseNums.length-1]<num/base){
 }
 num-=baseNums[baseNums.length-1];
 for(var n=baseNums.length-1;n>=0;n--){
-  if(num>tot+baseNums[n]&&used<base){
+  while(num>=tot+baseNums[n]&&used<base){
     newNum+=(10**n);
     used++;
     tot+=baseNums[n];
-  }else{
-    used=1;
   }
+  used=1;
 }
 console.log(newNum);
