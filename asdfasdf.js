@@ -16,8 +16,7 @@ for(var n=baseNums.length-1;n>=0;n--){
     newNum+=(10**n);
     used++;
     tot+=baseNums[n];
-  }else if{
-    newNum*=10;
+  }else{
     used=1;
   }
 }
