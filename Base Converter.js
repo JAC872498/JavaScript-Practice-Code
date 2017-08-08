@@ -2,10 +2,7 @@
 
 var num=252;//Base 10 number you want to convert
 var base=2;//Base you want the result to be in
-var newNum=1;
-var baseNums=[1];
-var used=2;
-var tot=0;
+var baseNums=[1],used=2,tot=0,newNum=1;
 while(baseNums[baseNums.length-1]<num/base){
   baseNums.push(baseNums[baseNums.length-1]*base);
   newNum*=10;
