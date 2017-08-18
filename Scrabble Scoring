@@ -1,1 +1,3 @@
 /**/
+
+var topWord="",topScore=0,totScore=0,currWord="",currScore=0;
