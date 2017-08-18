@@ -1,3 +1,8 @@
 /**/
 
-var topWord="",topScore=0,totScore=0,currWord="",currScore=0;
+var topWord="",topScore=0,totScore=0,currWord="",currScore=0,words=[];
+while(currWord!="0"){
+  currWord=prompt("XD");
+  words.push(currWord);
+}
+console.log(words);
