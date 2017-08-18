@@ -8,7 +8,15 @@ Q, Z                               10
 http://exercism.io/exercises/javascript/scrabble-score/readme*/
 
 function score(wrd){
-  
+  for(var n=0;n<wrd.length;n++){
+    if(wrd.split("")[n]=="D"||wrd.split("")=="G") return 2;
+    else if(wrd.split("")[n]=="B"||wrd.split("")[n]=="C"||wrd.split("")[n]=="M"||wrd.split("")[n]=="P") return 3;
+    else if(wrd.split("")[n]=="F"||wrd.split("")[n]=="H"||wrd.split("")[n]=="V"||wrd.split("")[n]=="W"||wrd.split("")[n]=="Y") return 4;
+    else if(wrd.split("")[n]=="K") return 5;
+    else if(wrd.split("")[n]=="J"||wrd.split("")[n]=="X") return 8;
+    else if(wrd.split("")[n]=="Q"||wrd.split("")[n]=="Z") return 10;
+    return 1;
+  }
 }
 
 var topWord="",topScore=0,totScore=0,currWord="",currScore=0,words=[],scores=[];
