@@ -11,3 +11,9 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 8-
 9-
 10-*/
+
+function enigma(){
+  var rotor1=["E","K","M","F","L","G","D","Q","V","Z","N","T","O","W","Y","H","X","U","S","P","A","I","B","R","C","J"];
+  var rotor2=[AJDKSIRUXBLHWTMCQGZNPYFVOE];
+  var rotor3=[BDFHJLCPRTXVZNYEIWGAKMUSQO];
+}
