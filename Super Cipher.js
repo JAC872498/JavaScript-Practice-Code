@@ -15,10 +15,24 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 function fourSquare(wrd){
 	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
 	var letters=wrd.split("");
+	var switchX1,switchX2,switchY1,switchY2;
 	if(letters.length%2!==0) letters.push("x");
 	var newWrd="";
 	for(var l=0;l<letters.length;l+=2){
 		console.log(letters[l]+letters[l+1]);
+		for(var y=0;y<5;y++){
+			for(var x=0;x<5;x++){
+				if(alph[y][x]==letters[l].toUpperCase()){
+					switchX2=x;
+					switchY1=y;
+				}
+				if(alph[y][x]==letters[l+1].toUpperCase()){
+					switchX1=x;
+					switchY2=y;
+				}
+			}
+		}
+		console.log(alph[switchY1][switchX1]+alph[switchY2][switchX2]);
 	}
 }
 
