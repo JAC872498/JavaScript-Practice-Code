@@ -31,3 +31,6 @@ function enigma(wrd,pos){
   var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 }
 
+function lorenz(wrd){
+	
+}
