@@ -14,7 +14,12 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 
 function fourSquare(wrd){
 	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
-
+	var letters=wrd.split("");
+	if(letters.length%2!==0) letters.push("x");
+	var newWrd="";
+	for(var l=0;l<letters.length;l+=2){
+		console.log(letters[l]+letters[l+1]);
+	}
 }
 
 function polybius(wrd){
