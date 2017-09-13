@@ -12,7 +12,9 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 9-
 10-*/
 
-function fourSquare(wrd){
+function fourSquare(wrd,ciph1,ciph2){
+	ciph1=ciph1.match(/.{1,5}/g);
+	ciph2=ciph2.match(/.{1,5}/g);
 	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
 	var letters=wrd.split("");
 	var switchX1,switchX2,switchY1,switchY2;
@@ -32,7 +34,7 @@ function fourSquare(wrd){
 				}
 			}
 		}
-		console.log(alph[switchY1][switchX1]+alph[switchY2][switchX2]);
+		console.log(ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2]);
 	}
 }
 
