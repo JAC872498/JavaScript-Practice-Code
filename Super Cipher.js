@@ -13,15 +13,15 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 10-*/
 
 function fourSquare(wrd,ciph1,ciph2){
-	ciph1=ciph1.match(/.{1,5}/g);
-	ciph2=ciph2.match(/.{1,5}/g);
+	ciph1=(ciph1.toUpperCase()).match(/.{1,5}/g);
+	ciph2=(ciph2.toUpperCase()).match(/.{1,5}/g);
 	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
 	var letters=wrd.split("");
 	var switchX1,switchX2,switchY1,switchY2;
 	if(letters.length%2!==0) letters.push("x");
 	var newWrd="";
 	for(var l=0;l<letters.length;l+=2){
-		console.log(letters[l]+letters[l+1]);
+		//console.log(letters[l]+letters[l+1]);
 		for(var y=0;y<5;y++){
 			for(var x=0;x<5;x++){
 				if(alph[y][x]==letters[l].toUpperCase()){
@@ -34,8 +34,10 @@ function fourSquare(wrd,ciph1,ciph2){
 				}
 			}
 		}
-		console.log(ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2]);
+		newWrd=newWrd+ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2];
+		//console.log(ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2]);
 	}
+	return(newWrd);
 }
 
 function polybius(wrd){
