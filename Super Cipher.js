@@ -12,6 +12,10 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 9-
 10-*/
 
+function fourSquare(wrd){
+  
+}
+
 function enigma(wrd,pos){
   var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
   var rotor1=["E","K","M","F","L","G","D","Q","V","Z","N","T","O","W","Y","H","X","U","S","P","A","I","B","R","C","J"];
