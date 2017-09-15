@@ -13,17 +13,22 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 10-*/
 
 function fourSquare(wrd,ciph1,ciph2,){//DONE
-	ciph1=(ciph1.toUpperCase()).match(/.{1,5}/g);
-	ciph2=(ciph2.toUpperCase()).match(/.{1,5}/g);
-	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
+	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
+	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
+	var alph=[["A","B","C","D","E","F"],
+         	 ["G","H","I","J","K","L"],
+         	 ["M","N","O","P","Q","R"],
+         	 ["S","T","U","V","W","X"],
+         	 ["Y","Z","1","2","3","4"],
+         	 ["5","6","7","8","9","0"]];
 	var letters=wrd.split("");
 	var switchX1,switchX2,switchY1,switchY2;
 	if(letters.length%2!==0) letters.push("x");
 	var newWrdE="", newWrdD="";//e=encoded, d=decoded
 	for(var l=0;l<letters.length;l+=2){
 		//console.log(letters[l]+letters[l+1]);
-		for(var y=0;y<5;y++){
-			for(var x=0;x<5;x++){
+		for(var y=0;y<6;y++){
+			for(var x=0;x<6;x++){
 				if(alph[y][x]==letters[l].toUpperCase()){
 					switchX2=x;
 					switchY1=y;
