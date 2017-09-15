@@ -47,8 +47,17 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
-function polybius(wrd){//NOT DONE
-  
+function polybius(wrd){
+	var newWrd="";
+	var alph=[["A","B","C","D","E","F"],
+         	 ["G","H","I","J","K","L"],
+         	 ["M","N","O","P","Q","R"],
+         	 ["S","T","U","V","W","X"],
+         	 ["Y","Z","1","2","3","4"],
+         	 ["5","6","7","8","9","0"]];
+	for(var char in wrd.split("")){
+        console.log(wrd.split("")[char]);
+	}
 }
 
 function ROT13(wrd){//NOT DONE
