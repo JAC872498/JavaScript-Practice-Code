@@ -24,7 +24,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	var letters=wrd.split("");
 	var switchX1,switchX2,switchY1,switchY2;
 	if(letters.length%2!==0) letters.push("x");
-	var newWrdE="", newWrdD="";//e=encoded, d=decoded
+	var newWrdE="", newWrdD="";//E=encoded, D=decoded
 	for(var l=0;l<letters.length;l+=2){
 		//console.log(letters[l]+letters[l+1]);
 		for(var y=0;y<6;y++){
