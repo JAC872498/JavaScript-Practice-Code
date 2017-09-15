@@ -12,7 +12,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 9-
 10-*/
 
-function fourSquare(wrd,ciph1,ciph2,){
+function fourSquare(wrd,ciph1,ciph2,){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,5}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,5}/g);
 	var alph=[["A","B","C","D","E"],["F","G","H","I","J"],["K","L","M","N","O"],["P","R","S","T","U"],["V","W","X","Y","Z"]];
@@ -42,21 +42,21 @@ function fourSquare(wrd,ciph1,ciph2,){
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
-function polybius(wrd){
+function polybius(wrd){//NOT DONE
   
 }
 
-function ROT13(wrd){
+function ROT13(wrd){//NOT DONE
 	
 }
 
-function enigma(wrd,pos){
+function enigma(wrd,pos){//NOT DONE
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 	var rotor1=["E","K","M","F","L","G","D","Q","V","Z","N","T","O","W","Y","H","X","U","S","P","A","I","B","R","C","J"];
 	var rotor2=["A","J","D","K","S","I","R","U","X","B","L","H","W","T","M","C","Q","G","Z","N","P","Y","F","V","O","E"];
 	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 }
 
-function lorenz(wrd){
+function lorenz(wrd){//NOT DONE
 	
 }
