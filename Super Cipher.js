@@ -12,7 +12,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 9-
 10-*/
 
-function fourSquare(wrd,ciph1,ciph2,){//DONE
+function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
 	var alph=[["A","B","C","D","E","F"],
