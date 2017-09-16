@@ -69,7 +69,7 @@ function polybius(wrd){
     if(wrd.length%2===0){
       for(var n=0;n<wrd.length;n+=2){
         //console.log(wrd[n]+" "+wrd[n+1]+alph[wrd[n]][wrd[n+1]]+"\n");
-        newWrdD=newWrdD+alph[wrd[n]][wrd[n+1]];
+         newWrdD=newWrdD+alph[wrd[n]][wrd[n+1]];
       }
     }
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
