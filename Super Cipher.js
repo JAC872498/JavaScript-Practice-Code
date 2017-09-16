@@ -47,16 +47,18 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
-function polybius(wrd){
+function polybius(wrd){//DONE
+	var decode=false;
+	if(isNaN(wrd)==false) decode=true;
 	wrd=wrd.toUpperCase();
-    wrd=wrd.split("");
+	wrd=wrd.split("");
 	var newWrdE="",newWrdD="";
 	var alph=[["A","B","C","D","E","F"],
-         	 ["G","H","I","J","K","L"],
-         	 ["M","N","O","P","Q","R"],
-         	 ["S","T","U","V","W","X"],
-         	 ["Y","Z","1","2","3","4"],
-         	 ["5","6","7","8","9","0"]];
+		  ["G","H","I","J","K","L"],
+		  ["M","N","O","P","Q","R"],
+		  ["S","T","U","V","W","X"],
+		  ["Y","Z","1","2","3","4"],
+		  ["5","6","7","8","9","0"]];
 	for(var char in wrd){
 		for(var y=0;y<6;y++){
 			for(var x=0;x<6;x++){
@@ -66,12 +68,18 @@ function polybius(wrd){
 			}
 		}
 	}
-    if(wrd.length%2===0){
-      for(var n=0;n<wrd.length;n+=2){
-        //console.log(wrd[n]+" "+wrd[n+1]+alph[wrd[n]][wrd[n+1]]+"\n");
-         newWrdD=newWrdD+alph[wrd[n]][wrd[n+1]];
-      }
-    }
+	if(wrd.length%2===0){
+		for(var n=0;n<wrd.length;n+=2){
+			//console.log(wrd[n]+" "+wrd[n+1]+alph[wrd[n]][wrd[n+1]]+"\n");
+			try{ 
+				newWrdD=newWrdD+alph[wrd[n]][wrd[n+1]];
+			}catch(err){
+				return("Encoded:"+newWrdE);
+			}
+		}
+	}else{
+		return("Encoded:"+newWrdE);
+	}
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
