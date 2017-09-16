@@ -49,7 +49,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 
 function polybius(wrd){
 	wrd=wrd.toUpperCase();
-	var newWrd="";
+	var newWrdE="",newWrdD="";
 	var alph=[["A","B","C","D","E","F"],
          	 ["G","H","I","J","K","L"],
          	 ["M","N","O","P","Q","R"],
@@ -60,13 +60,17 @@ function polybius(wrd){
 		for(var y=0;y<6;y++){
 			for(var x=0;x<6;x++){
 				if(alph[y][x]===wrd.split("")[char]){
-					newWrd=newWrd+y+x;
+					newWrdE=newWrdE+y+x;
 				}
 			}
 		}
 	}
-	return(newWrd);
+    if(wrd.length%2===0){
+      
+    }
+	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
+
 
 function ROT13(wrd){//NOT DONE
 	
