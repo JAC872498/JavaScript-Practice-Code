@@ -48,6 +48,8 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 }
 
 function polybius(wrd){
+	var decode=false;
+	if(wrd==wrd.toUpperCase()) decode=true;
 	wrd=wrd.toUpperCase();
 	var newWrdE="",newWrdD="";
 	var alph=[["A","B","C","D","E","F"],
@@ -65,9 +67,9 @@ function polybius(wrd){
 			}
 		}
 	}
-    if(wrd.length%2===0){
-      
-    }
+	if(decode){
+		
+	}
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
