@@ -48,9 +48,8 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 }
 
 function polybius(wrd){
-	var decode=false;
-	if(wrd==wrd.toUpperCase()) decode=true;
 	wrd=wrd.toUpperCase();
+    wrd=wrd.split("");
 	var newWrdE="",newWrdD="";
 	var alph=[["A","B","C","D","E","F"],
          	 ["G","H","I","J","K","L"],
@@ -58,18 +57,21 @@ function polybius(wrd){
          	 ["S","T","U","V","W","X"],
          	 ["Y","Z","1","2","3","4"],
          	 ["5","6","7","8","9","0"]];
-	for(var char in wrd.split("")){
+	for(var char in wrd){
 		for(var y=0;y<6;y++){
 			for(var x=0;x<6;x++){
-				if(alph[y][x]===wrd.split("")[char]){
+				if(alph[y][x]===wrd[char]){
 					newWrdE=newWrdE+y+x;
 				}
 			}
 		}
 	}
-	if(decode){
-		
-	}
+    if(wrd.length%2===0){
+      for(var n=0;n<wrd.length;n+=2){
+        //console.log(wrd[n]+" "+wrd[n+1]+alph[wrd[n]][wrd[n+1]]+"\n");
+        newWrdD=newWrdD+alph[wrd[n]][wrd[n+1]];
+      }
+    }
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
