@@ -123,10 +123,10 @@ function enigma(wrd){//NOT DONE
 	var rotor2=["A","J","D","K","S","I","R","U","X","B","L","H","W","T","M","C","Q","G","Z","N","P","Y","F","V","O","E"];
 	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
-	for(var char=0;char<wrd.split;char++){
+	for(var char=0;char<wrd.length;char++){
 		for(var x=0;x<alph.length;x++){
 			if(alph[x]==wrd[char]){
-				newWrd=newWrd+rotor[x];
+				newWrd=newWrd+rotor1[x];
 			}
 		}
 	}
