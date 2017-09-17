@@ -85,11 +85,17 @@ function polybius(wrd){//DONE
 
 
 function ROT13(wrd,rot){//NOT DONE
-	var newWrd="";
-	var alph=[["A","B","C","D","E","F"],["G","H","I","J","K","L"],["M","N","O","P","Q","R"],["S","T","U","V","W","X"],["Y","Z","1","2","3","4"],["5","6","7","8","9","0"]]; 
-	for(){
+    var newWrd="";
+    wrd=wrd.split("");
+	var alph=["A","B","C","D","E","F",
+              "G","H","I","J","K","L",
+              "M","N","O","P","Q","R",
+              "S","T","U","V","W","X",
+              "Y","Z","1","2","3","4",
+              "5","6","7","8","9","0"]; 
+    for(var char=0;char<wrd.length;char++){
       
-	}
+    }
 }
 
 function enigma(wrd,pos){//NOT DONE
