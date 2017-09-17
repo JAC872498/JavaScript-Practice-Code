@@ -85,7 +85,7 @@ function polybius(wrd){//DONE
 }
 
 
-function ROT13(wrd,rot){//NOT DONE
+function ROT13(wrd,rot){//DONE
 	var newWrdE="",newWrdD="";
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
