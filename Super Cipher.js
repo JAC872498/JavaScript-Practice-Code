@@ -26,15 +26,15 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	var switchX1,switchX2,switchY1,switchY2;
 	if(wrd.length%2!==0) wrd.push("x");
 	var newWrdE="", newWrdD="";//E=encoded, D=decoded
-	for(var l=0;l<wrd.length;l+=2){
+	for(var char=0;char<wrd.length;char+=2){
 		//console.log(letters[l]+letters[l+1]);
 		for(var y=0;y<6;y++){
 			for(var x=0;x<6;x++){
-				if(alph[y][x]==wrd[l].toUpperCase()){
+				if(alph[y][x]==wrd[char].toUpperCase()){
 					switchX2=x;
 					switchY1=y;
 				}
-				if(alph[y][x]==wrd[l+1].toUpperCase()){
+				if(alph[y][x]==wrd[char+1].toUpperCase()){
 					switchX1=x;
 					switchY2=y;
 				}
