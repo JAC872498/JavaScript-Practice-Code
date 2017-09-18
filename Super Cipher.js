@@ -101,9 +101,8 @@ function ROT13(wrd,rot){//DONE
               "Y","Z","1","2","3","4",
               "5","6","7","8","9","0"]; 
 	for(var char=0;char<wrd.length;char++){
-		for(var x=0;x<alph.length;x++){
-			if(alph[x]==wrd[char]){
-				if(x+rot>35){
+      var x=findAlph(wrd[char],alph,1)[0];
+      if(x+rot>35){
 					newWrdE=newWrdE+alph[x-rot];
 				}else{
 					newWrdE=newWrdE+alph[x+rot];
@@ -113,11 +112,10 @@ function ROT13(wrd,rot){//DONE
 				}else{
 					newWrdD=newWrdD+alph[x-rot];
 				}
-			}
-		}
+      
 	}
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
-}
+} 
 
 function enigma(wrd,rot){//NOT DONE
 	wrd=wrd.toUpperCase();
