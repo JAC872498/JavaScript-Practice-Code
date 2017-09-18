@@ -13,6 +13,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 10-*/
 
 function findAlph(letter,alph,dimensions){
+	letter=letter.toUpperCase();
 	var location=[]
 	if(dimensions==1){
 		for(var x=0;x<alph.length;x++){
