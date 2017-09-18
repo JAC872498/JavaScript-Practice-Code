@@ -12,6 +12,25 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 9-
 10-*/
 
+function findAlph(letter,alph,dimensions){
+	var location=[]
+	if(dimensions==1){
+		for(var x=0;x<alph.length;x++){
+			if(alph[x]==letter) location.push(x);
+		}
+	}else if(dimensions==2){
+		for(var y=0;y<alph.length;y++){
+			for(var x=0;x<alph[y].length;x++){
+				if(alph[y][x]==letter){
+					location.push(y);
+					location.push(x);
+				}
+			}
+		}
+	}
+	return location;
+}
+
 function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
