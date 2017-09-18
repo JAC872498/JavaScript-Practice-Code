@@ -114,7 +114,7 @@ function ROT13(wrd,rot){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 }
 
-function enigma(wrd){//NOT DONE
+function enigma(wrd,rot){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
