@@ -36,30 +36,21 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
 	var alph=[["A","B","C","D","E","F"],
-         	 ["G","H","I","J","K","L"],
-         	 ["M","N","O","P","Q","R"],
-         	 ["S","T","U","V","W","X"],
-         	 ["Y","Z","1","2","3","4"],
-         	 ["5","6","7","8","9","0"]];
+		  ["G","H","I","J","K","L"],
+		  ["M","N","O","P","Q","R"],
+		  ["S","T","U","V","W","X"],
+		  ["Y","Z","1","2","3","4"],
+		  ["5","6","7","8","9","0"]];
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var switchX1,switchX2,switchY1,switchY2;
 	if(wrd.length%2!==0) wrd.push("x");
 	var newWrdE="", newWrdD="";//E=encoded, D=decoded
 	for(var char=0;char<wrd.length;char+=2){
-		//console.log(letters[l]+letters[l+1]);
-		for(var y=0;y<6;y++){
-			for(var x=0;x<6;x++){
-				if(alph[y][x]==wrd[char].toUpperCase()){
-					switchX2=x;
-					switchY1=y;
-				}
-				if(alph[y][x]==wrd[char+1].toUpperCase()){
-					switchX1=x;
-					switchY2=y;
-				}
-			}
-		}
+		switchX2=findAlph(wrd[char],alph,2)[1];
+		switchY1=findAlph(wrd[char],alph,2)[0];
+		switchX1=findAlph(wrd[char+1],alph,2)[1];
+		switchY2=findAlph(wrd[char+1],alph,2)[0];
 		newWrdE=newWrdE+ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2];
 		newWrdD=newWrdD+alph[switchY1][switchX2]+alph[switchY2][switchX1];
 		//console.log(ciph1[switchY1][switchX1]+ciph2[switchY2][switchX2]);
