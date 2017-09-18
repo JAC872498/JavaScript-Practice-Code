@@ -72,13 +72,7 @@ function polybius(wrd){//DONE
 		  ["Y","Z","1","2","3","4"],
 		  ["5","6","7","8","9","0"]];
 	for(var char in wrd){
-		for(var y=0;y<6;y++){
-			for(var x=0;x<6;x++){
-				if(alph[y][x]===wrd[char]){
-					newWrdE=newWrdE+y+x;
-				}
-			}
-		}
+		newWrdE=newWrdE+findAlph(wrd[char],alph,2)[0]+findAlph(wrd[char],alph,2)[1];
 	}
 	if(wrd.length%2===0){
 		for(var n=0;n<wrd.length;n+=2){
