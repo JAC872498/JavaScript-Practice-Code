@@ -127,11 +127,10 @@ function enigma(wrd,rot){//NOT DONE
 	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
 	for(var char=0;char<wrd.length;char++){
-		for(var x=0;x<alph.length;x++){
-			if(alph[x]==wrd[char]){
-				newWrd=newWrd+rotor1[x];
-			}
-		}
+		var r1=rotor1[findAlph(wrd[char],alph,1)[0]];
+		var r2=rotor2[findAlph(r1,rotor1,1)[0]];
+		var r3=rotor3[findAlph(r2,rotor2,1)[0]];
+		console.log(r1,r2,r3);
 	}
 	return(newWrd);
 }
