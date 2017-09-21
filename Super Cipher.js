@@ -131,7 +131,7 @@ function enigma(wrd,rot){//NOT DONE
 		var r2=rotor2[findAlph(r1,rotor1,1)[0]];
 		var r3=rotor3[findAlph(r2,rotor2,1)[0]];
 		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];
-		console.log(r1,r2,r3,refA);
+        console.log(r1,r2,r3,refA);
 	}
 	return(newWrd);
 }
