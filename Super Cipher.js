@@ -130,8 +130,12 @@ function enigma(wrd,rot){//NOT DONE
 	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
 	for(var char=0;char<wrd.length;char++){
 		if(findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]>25) var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]-26];
-		else var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]];
-		var r2=rotor2[findAlph(r1,rotor1,1)[0]];
+		else var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]];//Rotor 1
+      
+		
+		if(findAlph(r1,rotor1,1)[0]+findAlph(rot[1],alph,1)[0]>25) var r2=rotor2[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]-26];
+		else var r2=rotor2[findAlph(r1,rotor1,1)[0]+findAlph(rot[1],alph,1)[0]];//Rotor 2
+      
 		var r3=rotor3[findAlph(r2,rotor2,1)[0]];
 		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];
 		console.log(r1,r2,r3,refA);
