@@ -145,8 +145,8 @@ function enigma(wrd,rot){//NOT DONE
 		if(findAlph(refA,reflectorA,1)[0]+findAlph(rot[2],alph,1)[0]>25) r3=rotor3[findAlph(refA,reflectorA,1)[0]+findAlph(rot[2],alph,1)[0]-26];
 		else r3=rotor3[findAlph(refA,reflectorA,1)[0]+findAlph(rot[2],alph,1)[0]];//Rotor 3 reflected
 	
-        if(findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]>25) r2=rotor2[findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]-26];
-        else r2=rotor2[findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]];//Rotor 2 reflected
+		if(findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]>25) r2=rotor2[findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]-26];
+		else r2=rotor2[findAlph(r3,rotor3,1)[0]+findAlph(rot[1],alph,1)[0]];//Rotor 2 reflected
     }
 	return(newWrd);
 }
