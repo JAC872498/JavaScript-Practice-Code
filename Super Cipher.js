@@ -118,7 +118,8 @@ function ROT13(wrd,rot){//DONE
 } 
 
 function enigma(wrd,rot){//NOT DONE
-	rotate=rot.split("");
+  var rotate=rot.split("");
+  console.log(rotate);
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
@@ -128,14 +129,16 @@ function enigma(wrd,rot){//NOT DONE
 	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
 	for(var char=0;char<wrd.length;char++){
-		while(findAlph(wrd[char],alph,1)[0]+rotate[0]>=26) rotate[0]-=26;
-		var r1=rotor1[findAlph(wrd[char],alph,1)[0]];
-		while(findAlph(r1,rotor1,1)[0]+rotate[1]>=26) rotate[1]-=26;
+      console.log(findAlph(wrd[char],alph,1)[0]+findAlph(rotate[0],alph,1)[0]);
+      if(findAlph(wrd[char],alph,1)[0]+findAlph(rotate[0],alph,1)[0]>=26) var r1=rotor1[findAlph(wrd[char],alph,1)[0]-25];
+      else var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rotate[0],alph,1)[0]];
+		
+      /*while(findAlph(r1,rotor1,1)[0]+rotate[1]>=26) rotate[1]-=26;
 		var r2=rotor2[findAlph(r1,rotor1,1)[0]];
-		while(findAlph(r2,rotor2,1)[0]+rotate[2]>=26) rotate[2]-=26;
+      while(findAlph(r2,rotor2,1)[0]+rotate[2]>=26) rotate[2]-=26;
 		var r3=rotor3[findAlph(r2,rotor2,1)[0]];
-		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];
-        console.log(r1,r2,r3,refA);
+		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];*/
+        console.log(r1);
 	}
 	return(newWrd);
 }
