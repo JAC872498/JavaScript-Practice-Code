@@ -136,7 +136,7 @@ function enigma(wrd,rot){//NOT DONE
 		else var r2=rotor2[findAlph(r1,rotor1,1)[0]+findAlph(rot[1],alph,1)[0]];//Rotor 2
 		
 		if(findAlph(r2,rotor2,1)[0]+findAlph(rot[2],alph,1)[0]>25) var r3=rotor3[findAlph(r2,rotor2,1)[0]+findAlph(rot[2],alph,1)[0]-26];
-		else var r3=rotor3[findAlph(r2,rotor2,1)[0]+findAlph(rot[2],alph,1)[0]];
+		else var r3=rotor3[findAlph(r2,rotor2,1)[0]+findAlph(rot[2],alph,1)[0]];//Rotor 3
       
 		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];
 		console.log(r1,r2,r3,refA);
