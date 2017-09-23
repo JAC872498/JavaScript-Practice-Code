@@ -1,6 +1,7 @@
 /*This is a mega-collection of word ciphers, ranging from weak ones you use with friends to extreme ones used by militaries
 below is a list of the ciphers that numbers corespond to, along with an explination of the cipher
-0- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
+0- 'leet speek', not really a cipher as much as it is a joke translator https://en.wikipedia.org/wiki/Leet
+1- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
 1- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 2- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
 3- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
@@ -36,21 +37,21 @@ function sp33k(wrd){
 	var newWrd="";
 	wrd=wrd.split("");
 	wrd=wrd.toUpperCase();
-	for(var x=0;x<wrd.length;x++){
-		if(wrd[x]=="A"){
+	for(var char in wrd){
+		if(char=="A"){
 			newWrd+="4";
-		}else if(wrd[x]=="E"){
+		}else if(char=="E"){
 			newWrd+="3";
-		}else if(wrd[x]=="I"||wrd[x]=="L"){
+		}else if(char=="I"||char=="L"){
 			newWrd+="1";
-		}else if(wrd[x]=="O"){
+		}else if(char=="O"){
 			newWrd+="0";
-		}else if(wrd[x]=="S"){
+		}else if(char=="S"){
 			newWrd+="Z";
-		}else if(wrd[x]=="T"){
+		}else if(char=="T"){
 			newWrd+="7";
 		}else{
-			newWrd+=wrd[x];
+			newWrd+=char;
 		}
 	}
 	return newWrd;
