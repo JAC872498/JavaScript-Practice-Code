@@ -2,16 +2,16 @@
 below is a list of the ciphers that numbers corespond to, along with an explination of the cipher
 0- 'leet speek', not really a cipher as much as it is a joke translator https://en.wikipedia.org/wiki/Leet
 1- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
-1- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
-2- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
-3- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
-4- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
-5- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
-6-
+2- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
+3- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
+4- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
+5- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
+6- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
 7-
 8-
 9-
-10-*/
+10-
+Created by Jordan Camilletti*/
 
 function findAlph(letter,alph,dimensions){
 	letter=letter.toUpperCase();
