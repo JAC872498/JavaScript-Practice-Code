@@ -4,10 +4,9 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 1- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 2- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
 3- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
-3- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
-4- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
-5- keyword cipher
-6-
+4- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
+5- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
+6- keyword cipher
 7-
 8-
 9-
