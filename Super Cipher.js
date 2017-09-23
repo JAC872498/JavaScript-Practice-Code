@@ -6,7 +6,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 3- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
 4- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
 5- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
-6- keyword cipher
+6-
 7-
 8-
 9-
