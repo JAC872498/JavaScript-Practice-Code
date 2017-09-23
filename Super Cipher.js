@@ -35,19 +35,22 @@ function findAlph(letter,alph,dimensions){
 function sp33k(wrd){
 	var newWrd="";
 	wrd=wrd.split("");
+	wrd=wrd.toUpperCase();
 	for(var x=0;x<wrd.length;x++){
-		if(wrd[x].toUpperCase()=="A"){
+		if(wrd[x]=="A"){
+			newWrd+="4";
+		}else if(wrd[x]=="E"){
 			newWrd+="3";
-		}else if(wrd[x].toUpperCase()=="E"){
-			newWrd+="3";
-		}else if(wrd[x].toUpperCase()=="I"){
+		}else if(wrd[x]=="I"||wrd[x]=="L"){
 			newWrd+="1";
-		}else if(wrd[x].toUpperCase()=="L"){
-			newWrd+="1";
-		}else if(wrd[x].toUpperCase()=="O"){
+		}else if(wrd[x]=="O"){
 			newWrd+="0";
+		}else if(wrd[x]=="S"){
+			newWrd+="Z";
+		}else if(wrd[x]=="T"){
+			newWrd+="7";
 		}else{
-			newWrd+=arr[x];
+			newWrd+=wrd[x];
 		}
 	}
 	return newWrd;
