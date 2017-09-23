@@ -117,6 +117,10 @@ function ROT13(wrd,rot){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 } 
 
+function keyWord(wrd,keyWrd){
+	
+}
+
 function enigma(wrd,rot){//DONE
 	rot=rot.toUpperCase();
 	rot=rot.split("");
