@@ -32,6 +32,27 @@ function findAlph(letter,alph,dimensions){
 	return location;
 }
 
+function sp33k(wrd){
+	var newWrd="";
+	wrd=wrd.split("");
+	for(var x=0;x<wrd.length;x++){
+		if(wrd[x].toUpperCase()=="A"){
+			newWrd+="3";
+		}else if(wrd[x].toUpperCase()=="E"){
+			newWrd+="3";
+		}else if(wrd[x].toUpperCase()=="I"){
+			newWrd+="1";
+		}else if(wrd[x].toUpperCase()=="L"){
+			newWrd+="1";
+		}else if(wrd[x].toUpperCase()=="O"){
+			newWrd+="0";
+		}else{
+			newWrd+=arr[x];
+		}
+	}
+	return newWrd;
+}
+
 function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
