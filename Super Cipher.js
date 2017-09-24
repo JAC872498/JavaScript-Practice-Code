@@ -33,7 +33,7 @@ function findAlph(letter,alph,dimensions){
 	return location;
 }
 
-function sp33k(wrd){
+function sp33k(wrd){//DONE
 	var newWrd="";
 	wrd=wrd.split("");
 	wrd=wrd.toUpperCase();
