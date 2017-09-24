@@ -36,13 +36,13 @@ function findAlph(letter,alph,dimensions){
 function sp33k(wrd){//DONE
 	var newWrd="";
 	wrd=wrd.split("");
-	wrd=wrd.toUpperCase();
-	for(var char in wrd){
-		if(char=="A"){
-			newWrd+="4";
+	wrd=wrd.Wrd+="4";
 		}else if(char=="E"){
 			newWrd+="3";
-		}else if(char=="I"||char=="L"){
+		}else if(chatoUpperCase();
+	for(var char in wrd){
+		if(char=="A"){
+			newr=="I"||char=="L"){
 			newWrd+="1";
 		}else if(char=="O"){
 			newWrd+="0";
@@ -121,18 +121,17 @@ function ROT13(wrd,rot){//DONE
 	wrd=wrd.split("");
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4""5","6","7","8","9","0"]; 
 	for(var char=0;char<wrd.length;char++){
-      var x=findAlph(wrd[char],alph,1)[0];
-      if(x+rot>35){
-					newWrdE=newWrdE+alph[x-rot];
-				}else{
-					newWrdE=newWrdE+alph[x+rot];
-				}
-				if(x-rot<0){
-					newWrdD=newWrdD+alph[x+rot];
-				}else{
-					newWrdD=newWrdD+alph[x-rot];
-				}
-      
+		var x=findAlph(wrd[char],alph,1)[0];
+		if(x+rot>35){
+			newWrdE=newWrdE+alph[x-rot];
+		}else{
+			newWrdE=newWrdE+alph[x+rot];
+		}
+		if(x-rot<0){
+			newWrdD=newWrdD+alph[x+rot];
+		}else{
+			newWrdD=newWrdD+alph[x-rot];
+		}
 	}
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 } 
