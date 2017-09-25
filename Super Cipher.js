@@ -139,17 +139,21 @@ function ROT13(wrd,rot){//DONE
 function keyWord(wrd,keyWrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
-    keyWrd=kewWrd.toUpperCase();
-    keyWrd=keyWrd.split("");
-    var newWrd="";
+	keyWrd=keyWrd.toUpperCase();
+	keyWrd=keyWrd.split("");
+	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
-    while(keyWrd.length<26){
-      
-    }
+	if(keyWrd.length<36){
+		for(var letter in alph){
+			if(!keyWrd.includes(alph[letter])){
+				keyWrd.push(alph[letter]);
+			}
+		}
+	}
 	for(var char in wrd){
-      newWrd=newWrd+kewWrd[findAlph(char,alph,1)[0]];
-    }
-  return newWrd;
+		newWrd=newWrd+keyWrd[findAlph(wrd[char],alph,1)[0]];
+	}
+	return newWrd;
 }
 
 function enigma(wrd,rot){//DONE
