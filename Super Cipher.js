@@ -137,7 +137,10 @@ function ROT13(wrd,rot){//DONE
 } 
 
 function keyWord(wrd,keyWrd){
-	
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
+	var newWrd="";
+	var alph=[];
 }
 
 function enigma(wrd,rot){//DONE
