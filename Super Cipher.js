@@ -136,12 +136,12 @@ function ROT13(wrd,rot){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 } 
 
-function keyWord(wrd,keyWrd){//NOT DONE
+function keyWord(wrd,keyWrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	keyWrd=keyWrd.toUpperCase();
 	keyWrd=keyWrd.split("");
-	var newWrd="";
+	var newWrdE="",newWrdD="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
 	if(keyWrd.length<36){
 		for(var letter in alph){
@@ -151,9 +151,10 @@ function keyWord(wrd,keyWrd){//NOT DONE
 		}
 	}
 	for(var char in wrd){
-		newWrd=newWrd+keyWrd[findAlph(wrd[char],alph,1)[0]];
+		newWrdE=newWrdE+keyWrd[findAlph(wrd[char],alph,1)[0]];
+		newWrdD=newWrdD+alph[findAlph(wrd[char],keyWrd,1)[0]];
 	}
-	return newWrd;
+	return("Encoded: "+newWrdE+"\nDecoded: "+newWrdD);
 }
 
 function enigma(wrd,rot){//DONE
