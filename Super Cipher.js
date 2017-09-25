@@ -13,7 +13,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 10-
 Created by Jordan Camilletti*/
 
-function findAlph(letter,alph,dimensions){
+function findAlph(letter,alph,dimensions){//this is used to find the number location of letters(A=0,B=1,C=2,G=7) or (A=[0,0],B=[0,1],C=[0,2],G=[1,0])
 	letter=letter.toUpperCase();
 	var location=[]
 	if(dimensions==1){
@@ -136,7 +136,7 @@ function ROT13(wrd,rot){//DONE
 	return("Encoded:"+newWrdE+"\nDecoded:"+newWrdD);
 } 
 
-function keyWord(wrd,keyWrd){
+function keyWord(wrd,keyWrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
