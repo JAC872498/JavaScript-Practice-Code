@@ -1,7 +1,8 @@
 /*This is a mega-collection of word ciphers, ranging from weak ones you use with friends to extreme ones used by militaries
 below is a list of the ciphers that numbers corespond to, along with an explination of the cipher
 0- 'leet speek', not really a cipher as much as it is a joke translator https://en.wikipedia.org/wiki/Leet
-1- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
+1- morse code, also not much of a cipher but still one I wanted to include
+2- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
 2- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 3- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
 4- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
