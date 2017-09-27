@@ -57,6 +57,10 @@ function sp33k(wrd){//DONE
 	return newWrd;
 }
 
+function morse(wrd){//NOT DONE
+	
+}
+
 function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
