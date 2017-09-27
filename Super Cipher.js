@@ -60,6 +60,8 @@ function sp33k(wrd){//DONE
 function morse(wrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
+    var alph=[];
+    var morseAlph=[];
 }
 
 function fourSquare(wrd,ciph1,ciph2){//DONE
