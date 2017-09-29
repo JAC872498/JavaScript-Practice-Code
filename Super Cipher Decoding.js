@@ -33,3 +33,27 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	}
 	return location;
 }
+
+function sp33k(wrd){
+}
+
+function morse(wrd){	
+}
+
+function fourSquare(wrd){
+}
+
+function polybius(wrd){
+}
+
+function ROT13(wrd){
+}
+
+function keyWord(wrd){
+}
+
+function enigma(wrd){
+}
+
+function lorenz(wrd){
+}
