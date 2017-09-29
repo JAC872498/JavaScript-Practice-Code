@@ -34,26 +34,26 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	return location;
 }
 
-function sp33k(wrd){
+function sp33k(wrd){//NOT DONE
 }
 
-function morse(wrd){	
+function morse(wrd){//NOT DONE
 }
 
-function fourSquare(wrd){
+function fourSquare(wrd){//NOT DONE
 }
 
-function polybius(wrd){
+function polybius(wrd){//NOT DONE
 }
 
-function ROT13(wrd){
+function ROT13(wrd){//NOT DONE
 }
 
-function keyWord(wrd){
+function keyWord(wrd){//NOT DONE
 }
 
-function enigma(wrd){
+function enigma(wrd){//NOT DONE
 }
 
-function lorenz(wrd){
+function lorenz(wrd){//NOT DONE
 }
