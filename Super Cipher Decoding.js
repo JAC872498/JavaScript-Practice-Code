@@ -1,9 +1,9 @@
 /*This is a mega-collection of word ciphers, ranging from weak ones you use with friends to extreme ones used by militaries
 This file is used to decode words
 below is a list of the ciphers that numbers corespond to, along with an explination of the cipher
-0- 'leet speek', not really a cipher as much as it is a joke translator https://en.wikipedia.org/wiki/Leet
-1- morse code, also not much of a cipher but still one I wanted to include https://morsecode.scphillips.com/morse2.html
-2- pig latin
+0- 'leet speek' https://en.wikipedia.org/wiki/Leet
+1- morse code https://morsecode.scphillips.com/morse2.html
+2- pig latin https://en.wikipedia.org/wiki/Pig_Latin#Rules
 3- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
 4- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 5- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
