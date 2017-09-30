@@ -39,6 +39,9 @@ function sp33k(wrd){//NOT DONE
 function morse(wrd){//NOT DONE
 }
 
+function pigLatin(wrd){//NOT DONE
+}
+
 function fourSquare(wrd){//NOT DONE
 }
 
