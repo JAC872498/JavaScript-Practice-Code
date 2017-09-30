@@ -11,7 +11,6 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 7- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
 8-
 9-
-10-
 Created by Jordan Camilletti*/
 
 function findAlph(letter,alph,dimensions){//this is used to find the number location of letters(A=0,B=1,C=2,G=7) or (A=[0,0],B=[0,1],C=[0,2],G=[1,0])
