@@ -31,7 +31,7 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 			}
 		}
 	}
-	return location;
+	return(location);
 }
 
 function sp33k(wrd){//DONE
@@ -55,7 +55,7 @@ function sp33k(wrd){//DONE
 			newWrd+=char;
 		}
 	}
-	return newWrd;
+	return(newWrd);
 }
 
 function morse(wrd){//NOT DONE
