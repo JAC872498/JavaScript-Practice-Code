@@ -3,6 +3,7 @@ This file is used to encode words
 below is a list of the ciphers that numbers corespond to, along with an explination of the cipher
 0- 'leet speek', not really a cipher as much as it is a joke translator https://en.wikipedia.org/wiki/Leet
 1- morse code, also not much of a cipher but still one I wanted to include https://morsecode.scphillips.com/morse2.html
+2- pig latin
 2- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
 3- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 4- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
