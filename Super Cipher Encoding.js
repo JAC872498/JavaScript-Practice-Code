@@ -161,7 +161,7 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd){
+function ADFGVX(wrd){//NOT DONE
 }
 
 function enigma(wrd,rot){//DONE
