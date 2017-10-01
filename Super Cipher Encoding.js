@@ -162,6 +162,13 @@ function keyWord(wrd,keyWrd){//DONE
 }
 
 function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
+	var newWrd="";
+	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
+	for(){
+    
+	}
 }
 
 function enigma(wrd,rot){//DONE
