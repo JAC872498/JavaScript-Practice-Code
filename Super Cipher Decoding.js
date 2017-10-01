@@ -8,9 +8,9 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 4- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 5- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
 6- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
-7- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
-8- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
-9-
+7- ADFGVX http://practicalcryptography.com/ciphers/adfgvx-cipher/
+8- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
+9- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
 Created by Jordan Camilletti*/
 
 function findAlph(letter,alph,dimensions){//this is used to find the number location of letters(A=0,B=1,C=2,G=7) or (A=[0,0],B=[0,1],C=[0,2],G=[1,0])
@@ -54,6 +54,9 @@ function ROT13(wrd){//NOT DONE
 function keyWord(wrd){//NOT DONE
 }
 
+function ADFGVX(wrd){//NOT DONE
+}
+	
 function enigma(wrd){//NOT DONE
 }
 
