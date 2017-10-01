@@ -164,14 +164,26 @@ function keyWord(wrd,keyWrd){//DONE
 function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
-	var newWrd="";
+	var newWrd="",column="";
+	var newArr=[];
 	var gridLetters=["A","D","F","G","V","X"];
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
 	for(var char=0;char<wrd.length;char++){
 		newWrd=newWrd+gridLetters[findAlph(wrd[char],keySquare,2)[0]]+gridLetters[findAlph(wrd[char],keySquare,2)[1]];
 	}
 	for(var x=0;x<newWrd.length/keyWrd.length;x++){
-		console.log(newWrd.slice(0+(x*6),6+(x*6))+" "+newWrd);
+		//console.log(newWrd.slice(0+(x*6),6+(x*6)));
+      newArr.push(newWrd.slice(0+(x*6),6+(x*6)))
+	}
+	//console.log(newArr);
+	for(var n=0;n<newArr[0].length;n++){
+		for(var c=0;c<newArr.length;c++){
+			if(n<newArr[c].length){
+				column=column+newArr[c][n];
+			}
+		}
+		console.log(column);
+		column="";
 	}
 }
 
