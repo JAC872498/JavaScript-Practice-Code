@@ -8,7 +8,7 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 4- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
 5- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
 6- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
-7- ADFGVX http://practicalcryptography.com/ciphers/adfgvx-cipher/
+7- ADFGVX cipher http://practicalcryptography.com/ciphers/adfgvx-cipher/
 8- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
 9- lorenz cipher http://practicalcryptography.com/ciphers/mechanical-era/lorenz/
 Created by Jordan Camilletti*/
