@@ -168,7 +168,10 @@ function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
 	var gridLetters=["A","D","F","G","V","X"];
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
 	for(var char=0;char<wrd.length;char++){
-		console.log(gridLetters[findAlph(wrd[char],keySquare,2)[0]]+" "+gridLetters[findAlph(wrd[char],keySquare,2)[1]]);
+		newWrd=newWrd+gridLetters[findAlph(wrd[char],keySquare,2)[0]]+gridLetters[findAlph(wrd[char],keySquare,2)[1]];
+	}
+	for(var x=0;x<newWrd.length/keyWrd.length;x++){
+		console.log(newWrd.slice(0,6)+" "+newWrd);
 	}
 }
 
