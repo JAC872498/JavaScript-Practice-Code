@@ -162,13 +162,14 @@ function keyWord(wrd,keyWrd){//DONE
 }
 
 function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
-	var newWrd="";
-	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
-	for(){
-    
-	}
+  wrd=wrd.toUpperCase();
+  wrd=wrd.split("");
+  var newWrd="";
+  var gridLetters=["A","D","F","G","V","X"];
+  keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
+  for(var char=0;char<wrd.length;char++){
+    console.log(gridLetters[findAlph(wrd[char],keySquare,2)[0]]+" "+gridLetters[findAlph(wrd[char],keySquare,2)[1]]);
+  }
 }
 
 function enigma(wrd,rot){//DONE
