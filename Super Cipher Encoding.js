@@ -70,14 +70,14 @@ function morse(wrd){//NOT DONE
 	console.log(newWrd);
 }
 
-function pigLatin(wrd){//NOT DONE
+function pigLatin(wrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
-	while(wrd[0]!="A"&&wrd[0]!="E"&&wrd[0]!="I"&&wrd[0]!="O"&&wrd[0]!="U"&&wrd[0]!="Y"){
+	while(wrd[0]!="A" && wrd[0]!="E" && wrd[0]!="I" && wrd[0]!="O" && wrd[0]!="U" && wrd[0]!="Y"){
 		wrd.push(wrd[0]);
 		wrd.shift();
 	}
-	return(wrd);
+	return(wrd.join("")+"AY");
 }
 
 function fourSquare(wrd,ciph1,ciph2){//DONE
