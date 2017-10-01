@@ -57,7 +57,7 @@ function sp33k(wrd){//DONE
 	return(newWrd);
 }
 
-function morse(wrd){//NOT DONE
+function morse(wrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
