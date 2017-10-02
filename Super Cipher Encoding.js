@@ -161,7 +161,7 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
+function ADFGVX(wrd,keySquare,keyWrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
@@ -183,8 +183,11 @@ function ADFGVX(wrd,keySquare,keyWrd){//NOT DONE
 		}
 		columns.push(keyWrd.split("")[n]+newWrd);
 	}
-	console.log(columns.sort());
-	//console.log(keyWrd.split("").sort());
+	columns=columns.sort();
+	for(var letter in columns){
+		columns[letter]=(columns[letter].substring(1,columns[letter].length));
+	}
+	return(columns.join(""));
 }
 
 function enigma(wrd,rot){//DONE
