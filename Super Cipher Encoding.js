@@ -67,7 +67,7 @@ function morse(wrd){//DONE
 		if(wrd[char]==" ")newWrd=newWrd+" ";
 		else newWrd=newWrd+morseAlph[findAlph(wrd[char],alph,1)[0]];
 	}
-	console.log(newWrd);
+	return(newWrd);
 }
 
 function pigLatin(wrd){//DONE
