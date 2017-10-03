@@ -63,7 +63,7 @@ function morse(wrd){//DONE
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
 	var morseAlph=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..",".----","..---","...--","....-",".....","-....","--...","---..","----.","-----"];
-	for(var char=0;char<wrd.length;char++){
+	for(var char in wrd){
 		if(wrd[char]==" ")newWrd=newWrd+" ";
 		else newWrd=newWrd+morseAlph[findAlph(wrd[char],alph,1)[0]];
 	}
@@ -94,7 +94,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	var switchX1,switchX2,switchY1,switchY2;
 	if(wrd.length%2!==0) wrd.push("x");
 	var newWrd="";
-	for(var char=0;char<wrd.length;char+=2){
+	for(var char in wrd){
 		switchX2=findAlph(wrd[char],alph,2)[1];
 		switchY1=findAlph(wrd[char],alph,2)[0];
 		switchX1=findAlph(wrd[char+1],alph,2)[1];
@@ -130,7 +130,7 @@ function ROT13(wrd,rot){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]; 
-	for(var char=0;char<wrd.length;char++){
+	for(var char in wrd){
 		var x=findAlph(wrd[char],alph,1)[0];
 		if(x+rot>35){
 			newWrd=newWrd+alph[x-rot];
@@ -168,13 +168,13 @@ function ADFGVX(wrd,keySquare,keyWrd){//DONE
 	var newArr=[], columns=[];
 	var gridLetters=["A","D","F","G","V","X"];
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
-	for(var char=0;char<wrd.length;char++){
+	for(var char in wrd){
 		newWrd=newWrd+gridLetters[findAlph(wrd[char],keySquare,2)[0]]+gridLetters[findAlph(wrd[char],keySquare,2)[1]];
 	}
 	for(var x=0;x<newWrd.length/keyWrd.length;x++){
 		newArr.push(newWrd.slice(0+(x*6),6+(x*6)))
 	}
-	for(var n=0;n<newArr[0].length;n++){
+	for(var n in newArr[0]){
 		newWrd="";
 		for(var c=0;c<newArr.length;c++){
 			if(n<newArr[c].length){
@@ -201,7 +201,7 @@ function enigma(wrd,rot){//DONE
 	var rotor2=["A","J","D","K","S","I","R","U","X","B","L","H","W","T","M","C","Q","G","Z","N","P","Y","F","V","O","E"];
 	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
 	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
-	for(var char=0;char<wrd.length;char++){
+	for(var char in wrd){
 		if(findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]>25) var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]-26];
 		else var r1=rotor1[findAlph(wrd[char],alph,1)[0]+findAlph(rot[0],alph,1)[0]];//Rotor 1
       
