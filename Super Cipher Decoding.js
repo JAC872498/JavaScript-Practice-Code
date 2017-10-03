@@ -34,10 +34,10 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 }
 
 function sp33k(wrd){//DONE
-  var newWrd="";
-  wrd=wrd.toUpperCase();
-  wrd=wrd.split("");
-  for(var char in wrd){
+	var newWrd="";
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
+	for(var char in wrd){
 		if(char=="4"){
 			newWrd+="A";
 		}else if(char=="3"){
@@ -54,7 +54,7 @@ function sp33k(wrd){//DONE
 			newWrd+=char;
 		}
 	}
-  return(newWrd);
+	return(newWrd);
 }
 
 function morse(wrd){//NOT DONE
