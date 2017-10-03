@@ -33,7 +33,28 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	return(location);
 }
 
-function sp33k(wrd){//NOT DONE
+function sp33k(wrd){//DONE
+  var newWrd="";
+  wrd=wrd.toUpperCase();
+  wrd=wrd.split("");
+  for(var char in wrd){
+		if(char=="4"){
+			newWrd+="A";
+		}else if(char=="3"){
+			newWrd+="E";
+		}else if(char=="1"){
+			newWrd+="l";
+		}else if(char=="0"){
+			newWrd+="O";
+		}else if(char=="Z"){
+			newWrd+="S";
+		}else if(char=="7"){
+			newWrd+="S";
+		}else{
+			newWrd+=char;
+		}
+	}
+  return(newWrd);
 }
 
 function morse(wrd){//NOT DONE
