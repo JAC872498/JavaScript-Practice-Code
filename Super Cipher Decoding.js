@@ -81,6 +81,8 @@ function fourSquare(wrd){//NOT DONE
 }
 
 function polybius(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
 
 function ROT13(wrd){//NOT DONE
