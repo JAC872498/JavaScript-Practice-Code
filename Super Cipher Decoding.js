@@ -71,6 +71,8 @@ function morse(wrd){//DONE
 }
 
 function pigLatin(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
 
 function fourSquare(wrd){//NOT DONE
