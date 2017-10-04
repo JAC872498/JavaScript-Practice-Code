@@ -102,6 +102,8 @@ function ROT13(wrd,rot){//NOT DONE
 }
 
 function keyWord(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
 
 function ADFGVX(wrd){//NOT DONE
