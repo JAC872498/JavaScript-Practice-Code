@@ -76,6 +76,8 @@ function pigLatin(wrd){//NOT DONE
 }
 
 function fourSquare(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
 
 function polybius(wrd){//NOT DONE
