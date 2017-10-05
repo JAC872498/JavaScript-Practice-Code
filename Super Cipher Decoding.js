@@ -14,7 +14,6 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 Created by Jordan Camilletti*/
 
 function findAlph(letter,alph,dimensions){//this is used to find the number location of letters(A=0,B=1,C=2,G=7) or (A=[0,0],B=[0,1],C=[0,2],G=[1,0])
-	letter=letter.toUpperCase();
 	var location=[]
 	if(dimensions==1){
 		for(var x=0;x<alph.length;x++){
