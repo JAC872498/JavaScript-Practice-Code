@@ -117,4 +117,6 @@ function enigma(wrd){//NOT DONE
 }
 
 function lorenz(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
