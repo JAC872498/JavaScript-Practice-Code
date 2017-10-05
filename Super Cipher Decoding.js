@@ -110,7 +110,7 @@ function ADFGVX(wrd){//NOT DONE
 	wrd=wrd.split("");
 }
 	
-function enigma(wrd){//NOT DONE
+function enigma(wrd,rot){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 }
