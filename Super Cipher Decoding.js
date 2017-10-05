@@ -84,7 +84,7 @@ function polybius(wrd){//NOT DONE
 	wrd=wrd.split("");
 }
 
-function ROT13(wrd,rot){//NOT DONE
+function ROT13(wrd,rot){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
