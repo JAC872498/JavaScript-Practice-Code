@@ -100,7 +100,7 @@ function ROT13(wrd,rot){//DONE
 	return(newWrd);
 }
 
-function keyWord(wrd){//NOT DONE
+function keyWord(wrd,keyWrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 }
