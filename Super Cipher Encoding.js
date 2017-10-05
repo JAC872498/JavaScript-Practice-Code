@@ -106,8 +106,6 @@ function fourSquare(wrd,ciph1,ciph2){//NOT DONE
 }
 
 function polybius(wrd){//DONE
-	var decode=false;
-	if(isNaN(wrd)===false) decode=true;
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
