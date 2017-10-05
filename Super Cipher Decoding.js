@@ -107,6 +107,8 @@ function keyWord(wrd){//NOT DONE
 }
 
 function ADFGVX(wrd){//NOT DONE
+	wrd=wrd.toUpperCase();
+	wrd=wrd.split("");
 }
 	
 function enigma(wrd){//NOT DONE
