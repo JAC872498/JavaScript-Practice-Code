@@ -100,7 +100,7 @@ function ROT13(wrd,rot){//DONE
 	return(newWrd);
 }
 
-function keyWord(wrd,keyWrd){//NOT DONE
+function keyWord(wrd,keyWrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	keyWrd=keyWrd.toUpperCase();
@@ -114,6 +114,10 @@ function keyWord(wrd,keyWrd){//NOT DONE
 			}
 		}
 	}
+    for(var char in wrd){
+      newWrd=newWrd+alph[findAlph(wrd[char],keyWrd,1)[0]];
+    }
+    return(newWrd);
 }
 
 function ADFGVX(wrd){//NOT DONE
