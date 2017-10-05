@@ -115,7 +115,7 @@ function polybius(wrd){//DONE
 		  ["S","T","U","V","W","X"],
 		  ["Y","Z","1","2","3","4"],
 		  ["5","6","7","8","9","0"]];
-	for(var char in wrd){
+	for(var char=0;char<wrd.length-1;char+=2){
 		newWrd=newWrd+findAlph(wrd[char],alph,2)[0]+findAlph(wrd[char],alph,2)[1];
 	}
 	return(newWrd);
