@@ -82,6 +82,17 @@ function fourSquare(wrd){//NOT DONE
 function polybius(wrd){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
+    var newWrd="";
+	var alph=[["A","B","C","D","E","F"],
+		  ["G","H","I","J","K","L"],
+		  ["M","N","O","P","Q","R"],
+		  ["S","T","U","V","W","X"],
+		  ["Y","Z","1","2","3","4"],
+		  ["5","6","7","8","9","0"]];
+  for(var char in wrd){
+    newWrd=newWrd+alph[wrd[char]][wrd[char+1]];
+  }
+  return(newWrd);
 }
 
 function ROT13(wrd,rot){//DONE
