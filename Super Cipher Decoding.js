@@ -79,7 +79,7 @@ function fourSquare(wrd){//NOT DONE
 	wrd=wrd.split("");
 }
 
-function polybius(wrd){//NOT DONE
+function polybius(wrd){//DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
 	var newWrd="";
