@@ -114,10 +114,10 @@ function keyWord(wrd,keyWrd){//DONE
 			}
 		}
 	}
-    for(var char in wrd){
-      newWrd=newWrd+alph[findAlph(wrd[char],keyWrd,1)[0]];
-    }
-    return(newWrd);
+	for(var char in wrd){
+		newWrd=newWrd+alph[findAlph(wrd[char],keyWrd,1)[0]];
+	}
+	return(newWrd);
 }
 
 function ADFGVX(wrd){//NOT DONE
