@@ -79,7 +79,7 @@ function pigLatin(wrd){//DONE
 	return(wrd.join("")+"AY");
 }
 
-function fourSquare(wrd,ciph1,ciph2){//DONE
+function fourSquare(wrd,ciph1,ciph2){//NOT DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
 	var alph=[["A","B","C","D","E","F"],
