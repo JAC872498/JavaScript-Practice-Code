@@ -79,7 +79,7 @@ function pigLatin(wrd){//DONE
 	return(wrd.join("")+"AY");
 }
 
-function fourSquare(wrd,ciph1,ciph2){//NOT DONE
+function fourSquare(wrd,ciph1,ciph2){//DONE
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
 	var alph=[["A","B","C","D","E","F"],
@@ -93,7 +93,7 @@ function fourSquare(wrd,ciph1,ciph2){//NOT DONE
 	var switchX1,switchX2,switchY1,switchY2;
 	if(wrd.length%2!==0) wrd.push("x");
 	var newWrd="";
-	for(var char in wrd){
+	for(var char=0;char<wrd.length-1;char++){
 		switchX2=findAlph(wrd[char],alph,2)[1];
 		switchY1=findAlph(wrd[char],alph,2)[0];
 		switchX1=findAlph(wrd[char+1],alph,2)[1];
