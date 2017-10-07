@@ -139,6 +139,9 @@ function ADFGVX(wrd){//NOT DONE
 function enigma(wrd,rot){//NOT DONE
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
+	rot1=[];
+	rot2=[];
+	rot3=[];
 }
 
 function lorenz(wrd){//NOT DONE
