@@ -74,8 +74,8 @@ function pigLatin(wrd){//NOT DONE
 	wrd=wrd.split("");
 }
 
-function fourSquare(wrd,ciph1,ciph2){//NOT DONE
-  ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
+function fourSquare(wrd,ciph1,ciph2){//DONE
+	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
 	var alph=[["A","B","C","D","E","F"],
 		  ["G","H","I","J","K","L"],
@@ -85,16 +85,16 @@ function fourSquare(wrd,ciph1,ciph2){//NOT DONE
 		  ["5","6","7","8","9","0"]];
 	wrd=wrd.toUpperCase();
 	wrd=wrd.split("");
-  var switchX1,switchX2,switchY1,switchY2;
-  var newWrd="";
-  for(var char=0;char<wrd.length;char+=2){
-    switchY1=findAlph(wrd[char],ciph1,2)[0];
-    switchX2=findAlph(wrd[char],ciph1,2)[1];
-    switchY2=findAlph(wrd[char+1],ciph2,2)[0];
-    switchX1=findAlph(wrd[char+1],ciph2,2)[1];
-    newWrd=newWrd+alph[switchY1][switchX1]+alph[switchY2][switchX2];
-  }
-  return(newWrd);
+	var switchX1,switchX2,switchY1,switchY2;
+	var newWrd="";
+	for(var char=0;char<wrd.length;char+=2){
+		switchY1=findAlph(wrd[char],ciph1,2)[0];
+		switchX2=findAlph(wrd[char],ciph1,2)[1];
+		switchY2=findAlph(wrd[char+1],ciph2,2)[0];
+		switchX1=findAlph(wrd[char+1],ciph2,2)[1];
+		newWrd=newWrd+alph[switchY1][switchX1]+alph[switchY2][switchX2];
+	}
+	return(newWrd);
 }
 
 function polybius(wrd){//DONE
