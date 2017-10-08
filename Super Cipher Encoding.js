@@ -93,7 +93,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	var switchX1,switchX2,switchY1,switchY2;
 	if(wrd.length%2!==0) wrd.push("x");
 	var newWrd="";
-	for(var char=0;char<wrd.length-1;char++){
+	for(var char=0;char<wrd.length;char+=2){
 		switchX2=findAlph(wrd[char],alph,2)[1];
 		switchY1=findAlph(wrd[char],alph,2)[0];
 		switchX1=findAlph(wrd[char+1],alph,2)[1];
