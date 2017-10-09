@@ -33,9 +33,8 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 }
 
 function sp33k(wrd){//DONE
+	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
 	for(var char in wrd){
 		if(char=="4"){
 			newWrd+="A";
