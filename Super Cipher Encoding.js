@@ -102,8 +102,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 }
 
 function polybius(wrd){//DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=[["A","B","C","D","E","F"],
 		  ["G","H","I","J","K","L"],
