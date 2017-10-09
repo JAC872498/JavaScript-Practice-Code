@@ -150,8 +150,7 @@ function ADFGVX(wrd){//NOT DONE
 }
 	
 function enigma(wrd,rot){//NOT DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	var rot1=[];
 	var rot2=[];
 	var rot3=[];
