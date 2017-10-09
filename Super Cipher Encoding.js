@@ -33,8 +33,8 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 }
 
 function sp33k(wrd){//DONE
-	var newWrd="";
 	wrd=(wrd.toUpperCase()).split("");
+	var newWrd="";
 	for(var char in wrd){
 		if(char=="A"){
 			newWrd+="4";
@@ -56,8 +56,7 @@ function sp33k(wrd){//DONE
 }
 
 function morse(wrd){//DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
 	var morseAlph=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..",".----","..---","...--","....-",".....","-....","--...","---..","----.","-----"];
