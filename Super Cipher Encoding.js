@@ -133,8 +133,7 @@ function ROT13(wrd,rot){//DONE
 } 
 
 function keyWord(wrd,keyWrd){//DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	keyWrd=keyWrd.toUpperCase();
 	keyWrd=keyWrd.split("");
 	var newWrd="";
