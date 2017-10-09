@@ -160,6 +160,5 @@ function enigma(wrd,rot){//NOT DONE
 }
 
 function lorenz(wrd){//NOT DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 }
