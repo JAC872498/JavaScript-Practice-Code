@@ -80,8 +80,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 		  ["S","T","U","V","W","X"],
 		  ["Y","Z","1","2","3","4"],
 		  ["5","6","7","8","9","0"]];
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	var switchX1,switchX2,switchY1,switchY2;
 	var newWrd="";
 	for(var char=0;char<wrd.length;char+=2){
