@@ -152,8 +152,7 @@ function keyWord(wrd,keyWrd){//DONE
 }
 
 function ADFGVX(wrd,keySquare,keyWrd){//DONE
-	wrd=wrd.toUpperCase();
-	wrd=wrd.split("");
+	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var newArr=[], columns=[];
 	var gridLetters=["A","D","F","G","V","X"];
