@@ -155,7 +155,7 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	for(var char in keyWrd2){
 		for(var column in wrd){
 			if(wrd[column][0]==keyWrd2[char]){
-				sortedWrd.push(wrd[column]);
+				sortedWrd.push(wrd[column].substring(1,wrd[column].length));
 			}
 		}
 	}
