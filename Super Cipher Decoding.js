@@ -158,7 +158,8 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 				sortedWrd.push(wrd[column]);
 			}
 		}
-		console.log(sortedWrd);
+	}
+	console.log(sortedWrd);
 }
 	
 function enigma(wrd,rot){//NOT DONE
