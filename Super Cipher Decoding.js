@@ -148,18 +148,31 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	keyWrd2=(keyWrd2.toUpperCase()).split("");//This is just the keyWrd but it stays unsorted
 	var sortedWrd=[];
 	var newWrd="";
+    var longest=0;
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
 	for(var column in wrd){
 		wrd[column]=(keyWrd.sort())[column]+wrd[column];
 	}
 	for(var char in keyWrd2){
-		for(var column in wrd){
+		for(column in wrd){
 			if(wrd[column][0]==keyWrd2[char]){
 				sortedWrd.push(wrd[column].substring(1,wrd[column].length));
 			}
 		}
 	}
-	console.log(sortedWrd);
+	//console.log(sortedWrd);
+    for(var long in sortedWrd){
+      if(sortedWrd[long].length>sortedWrd[5].length){
+        longest=long;
+      }
+    }
+  for(char in sortedWrd[5]){
+    newWrd=newWrd+sortedWrd[0][char]+sortedWrd[1][char]+sortedWrd[2][char]+sortedWrd[3][char]+sortedWrd[4][char]+sortedWrd[5][char]
+  }
+  for(char=0;char<=longest;char++){
+    newWrd=newWrd+sortedWrd[char][[sortedWrd[char].length]-1];
+  }
+  console.log(newWrd);
 }
 	
 function enigma(wrd,rot){//NOT DONE
