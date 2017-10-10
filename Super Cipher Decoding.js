@@ -142,8 +142,23 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd){//NOT DONE
-	wrd=(wrd.toUpperCase()).split("");
+function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
+	wrd=(wrd.toUpperCase()).split(" ");
+	keyWrd=(keyWrd.toUpperCase()).split("");
+	keyWrd2=(keyWrd2.toUpperCase()).split("");//This is just the keyWrd but it stays unsorted
+	var sortedWrd=[];
+	var newWrd="";
+	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
+	for(var column in wrd){
+		wrd[column]=(keyWrd.sort())[column]+wrd[column];
+	}
+	for(var char in keyWrd2){
+		for(var column in wrd){
+			if(wrd[column][0]==keyWrd2[char]){
+				sortedWrd.push(wrd[column]);
+			}
+		}
+		console.log(sortedWrd);
 }
 	
 function enigma(wrd,rot){//NOT DONE
