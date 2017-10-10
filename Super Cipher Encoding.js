@@ -157,13 +157,13 @@ function ADFGVX(wrd,keySquare,keyWrd){//DONE
 	var newArr=[], columns=[];
 	var gridLetters=["A","D","F","G","V","X"];
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
-	for(var char in wrd){
+	for(var char in wrd){//Mapping letters to grid letters
 		newWrd=newWrd+gridLetters[findAlph(wrd[char],keySquare,2)[0]]+gridLetters[findAlph(wrd[char],keySquare,2)[1]];
 	}
-	for(var x=0;x<newWrd.length/keyWrd.length;x++){
+	for(var x=0;x<newWrd.length/keyWrd.length;x++){//Mapping those grid letters to the keyWrd
 		newArr.push(newWrd.slice(0+(x*6),6+(x*6)))
 	}
-	for(var n in newArr[0]){
+	for(var n in newArr[0]){//Adding the keyWrd letters to the front of the grid letter columns
 		newWrd="";
 		for(var c=0;c<newArr.length;c++){
 			if(n<newArr[c].length){
@@ -172,8 +172,8 @@ function ADFGVX(wrd,keySquare,keyWrd){//DONE
 		}
 		columns.push(keyWrd.split("")[n]+newWrd);
 	}
-	columns=columns.sort();
-	for(var letter in columns){
+	columns=columns.sort();//Sorting the keyWrd columns
+	for(var letter in columns){//Putting the final columns into a string
 		columns[letter]=(columns[letter].substring(1,columns[letter].length));
 	}
 	return(columns.join(""));
