@@ -146,6 +146,7 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	wrd=(wrd.toUpperCase()).split(" ");
 	keyWrd=(keyWrd.toUpperCase()).split("");
 	keyWrd2=(keyWrd2.toUpperCase()).split("");//This is just the keyWrd but it stays unsorted
+	var gridLetters=["A","D","F","G","V","X"];
 	var sortedWrd=[];
 	var newWrd="";
 	var longest=0;
