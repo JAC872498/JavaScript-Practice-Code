@@ -149,6 +149,7 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	var gridLetters=["A","D","F","G","V","X"];
 	var sortedWrd=[];
 	var newWrd="";
+	var finalWrd="";
 	var longest=0;
 	keySquare=(keySquare.toUpperCase()).match(/.{1,6}/g);
 	for(var column in wrd){
@@ -174,6 +175,10 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 		newWrd=newWrd+sortedWrd[char][[sortedWrd[char].length]-1];
 	}
 	console.log(newWrd);
+	for(char=0;char<newWrd.length;char+=2){
+		finalWrd=finalWrd+keySquare[findAlph(newWrd[char],gridLetters,1)[0]][findAlph(newWrd[char+1],gridLetters,1)[0]];
+	}
+	return(finalWrd);
 }
 	
 function enigma(wrd,rot){//NOT DONE
