@@ -162,14 +162,14 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	}
 	//console.log(sortedWrd);
 	for(var long in sortedWrd){
-		if(sortedWrd[long].length>sortedWrd[5].length){
+		if(sortedWrd[long].length>sortedWrd[5].length){//Finding the columns with longer length
 			longest=long;
 		}
 	}
 	for(char in sortedWrd[5]){
 		newWrd=newWrd+sortedWrd[0][char]+sortedWrd[1][char]+sortedWrd[2][char]+sortedWrd[3][char]+sortedWrd[4][char]+sortedWrd[5][char]
 	}
-	for(char=0;char<=longest;char++){
+	for(char=0;char<=longest;char++){//Both of these loops take the letters out of column form and put them in a single string
 		newWrd=newWrd+sortedWrd[char][[sortedWrd[char].length]-1];
 	}
 	console.log(newWrd);
