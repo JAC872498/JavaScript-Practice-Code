@@ -32,7 +32,7 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	return(location);
 }
 
-function sp33k(wrd){//DONE
+function sp33kD(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	for(var char in wrd){
@@ -55,7 +55,7 @@ function sp33k(wrd){//DONE
 	return(newWrd);
 }
 
-function morse(wrd){//DONE
+function morseD(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
@@ -67,11 +67,11 @@ function morse(wrd){//DONE
 	return(newWrd);
 }
 
-function pigLatin(wrd){//NOT DONE
+function pigLatinD(wrd){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
 }
 
-function fourSquare(wrd,ciph1,ciph2){//DONE
+function fourSquareD(wrd,ciph1,ciph2){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
 	ciph2=(ciph2.toUpperCase()).match(/.{1,6}/g);
@@ -93,7 +93,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	return(newWrd);
 }
 
-function polybius(wrd){//DONE
+function polybiusD(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=[["A","B","C","D","E","F"],
@@ -108,7 +108,7 @@ function polybius(wrd){//DONE
 	return(newWrd);
 }
 
-function ROT13(wrd,rot){//DONE
+function ROT13D(wrd,rot){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
@@ -123,7 +123,7 @@ function ROT13(wrd,rot){//DONE
 	return(newWrd);
 }
 
-function keyWord(wrd,keyWrd){//DONE
+function keyWordD(wrd,keyWrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	keyWrd=keyWrd.toUpperCase();
 	keyWrd=keyWrd.split("");
@@ -142,7 +142,7 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
+function ADFGVXD(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 	wrd=(wrd.toUpperCase()).split(" ");
 	keyWrd=(keyWrd.toUpperCase()).split("");
 	keyWrd2=(keyWrd2.toUpperCase()).split("");//This is just the keyWrd but it stays unsorted
@@ -179,13 +179,13 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 	return(finalWrd);
 }
 	
-function enigma(wrd,rot){//NOT DONE
+function enigmaD(wrd,rot){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var rot1=[];
 	var rot2=[];
 	var rot3=[];
 }
 
-function lorenz(wrd){//NOT DONE
+function lorenzD(wrd){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
 }
