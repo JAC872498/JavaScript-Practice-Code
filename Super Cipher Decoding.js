@@ -142,7 +142,7 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
+function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 	wrd=(wrd.toUpperCase()).split(" ");
 	keyWrd=(keyWrd.toUpperCase()).split("");
 	keyWrd2=(keyWrd2.toUpperCase()).split("");//This is just the keyWrd but it stays unsorted
