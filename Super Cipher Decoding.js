@@ -162,7 +162,6 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 			}
 		}
 	}
-	//console.log(sortedWrd);
 	for(var long in sortedWrd){
 		if(sortedWrd[long].length>sortedWrd[5].length){//Finding the columns with longer length
 			longest=long;
