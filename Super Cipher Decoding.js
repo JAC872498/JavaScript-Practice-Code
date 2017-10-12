@@ -174,7 +174,6 @@ function ADFGVX(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//NOT DONE
 	for(char=0;char<=longest;char++){//Both of these loops take the letters out of column form and put them in a single string
 		newWrd=newWrd+sortedWrd[char][[sortedWrd[char].length]-1];
 	}
-	console.log(newWrd);
 	for(char=0;char<newWrd.length;char+=2){
 		finalWrd=finalWrd+keySquare[findAlph(newWrd[char],gridLetters,1)[0]][findAlph(newWrd[char+1],gridLetters,1)[0]];
 	}
