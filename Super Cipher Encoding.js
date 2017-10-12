@@ -32,7 +32,7 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	return(location);
 }
 
-function sp33k(wrd){//DONE
+function sp33kE(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	for(var char in wrd){
@@ -55,7 +55,7 @@ function sp33k(wrd){//DONE
 	return(newWrd);
 }
 
-function morse(wrd){//DONE
+function morseE(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
@@ -67,7 +67,7 @@ function morse(wrd){//DONE
 	return(newWrd);
 }
 
-function pigLatin(wrd){//DONE
+function pigLatinE(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	while(wrd[0]!="A" && wrd[0]!="E" && wrd[0]!="I" && wrd[0]!="O" && wrd[0]!="U" && wrd[0]!="Y"){
 		wrd.push(wrd[0]);
@@ -76,7 +76,7 @@ function pigLatin(wrd){//DONE
 	return(wrd.join("")+"AY");
 }
 
-function fourSquare(wrd,ciph1,ciph2){//DONE
+function fourSquareE(wrd,ciph1,ciph2){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	if(wrd.length%2!==0) wrd.push("X");
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
@@ -101,7 +101,7 @@ function fourSquare(wrd,ciph1,ciph2){//DONE
 	return(newWrd);
 }
 
-function polybius(wrd){//DONE
+function polybiusE(wrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=[["A","B","C","D","E","F"],
@@ -117,7 +117,7 @@ function polybius(wrd){//DONE
 }
 
 
-function ROT13(wrd,rot){//DONE
+function ROT13E(wrd,rot){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]; 
@@ -132,7 +132,7 @@ function ROT13(wrd,rot){//DONE
 	return(newWrd);
 } 
 
-function keyWord(wrd,keyWrd){//DONE
+function keyWordE(wrd,keyWrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	keyWrd=keyWrd.toUpperCase();
 	keyWrd=keyWrd.split("");
@@ -151,7 +151,7 @@ function keyWord(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVX(wrd,keySquare,keyWrd){//DONE
+function ADFGVXE(wrd,keySquare,keyWrd){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var newArr=[], columns=[];
@@ -179,7 +179,7 @@ function ADFGVX(wrd,keySquare,keyWrd){//DONE
 	return(columns.join(""));
 }
 
-function enigma(wrd,rot){//DONE
+function enigmaE(wrd,rot){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	rot=(rot.toUpperCase()).split("");
 	var newWrd="";
@@ -215,6 +215,6 @@ function enigma(wrd,rot){//DONE
 	return(newWrd);
 }
 
-function lorenz(wrd){//NOT DONE
+function lorenzE(wrd){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
 }
