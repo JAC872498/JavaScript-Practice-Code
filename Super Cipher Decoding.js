@@ -181,9 +181,23 @@ function ADFGVXD(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 	
 function enigmaD(wrd,rot){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
-	var rot1=[];
-	var rot2=[];
-	var rot3=[];
+	rot=(rot.toUpperCase()).split("");
+	var newWrd="";
+	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+	var rotor1=["E","K","M","F","L","G","D","Q","V","Z","N","T","O","W","Y","H","X","U","S","P","A","I","B","R","C","J"];
+	var rotor2=["A","J","D","K","S","I","R","U","X","B","L","H","W","T","M","C","Q","G","Z","N","P","Y","F","V","O","E"];
+	var rotor3=["B","D","F","H","J","L","C","P","R","T","X","V","Z","N","Y","E","I","W","G","A","K","M","U","S","Q","O"];
+	var reflectorA=["E","J","M","Z","A","L","Y","X","V","B","W","F","C","R","Q","U","O","N","T","S","P","I","K","H","G","D"];
+	for(var char in wrd){
+      r1R
+      r2R
+      r3R
+      R
+      r3
+      r2
+      r1
+	}
+	return(newWrd);
 }
 
 function lorenzD(wrd){//NOT DONE
