@@ -179,7 +179,7 @@ function ADFGVXD(wrd,keySquare,keyWrd,keyWrd2=keyWrd){//DONE
 	return(finalWrd);
 }
 	
-function enigmaD(wrd,rot){//NOT DONE
+function enigmaD(wrd,rot){//DONE
 	wrd=(wrd.toUpperCase()).split("");
 	rot=(rot.toUpperCase()).split("");
 	var newWrd="";
