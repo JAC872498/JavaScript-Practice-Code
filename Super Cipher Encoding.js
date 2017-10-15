@@ -6,10 +6,10 @@ below is a list of the ciphers that numbers corespond to, along with an explinat
 2- pig latin https://en.wikipedia.org/wiki/Pig_Latin#Rules
 3- four square cipher http://practicalcryptography.com/ciphers/classical-era/four-square/
 4- polybius square http://practicalcryptography.com/ciphers/classical-era/polybius-square/
-5- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
-6- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
-7- ADFGVX cipher http://practicalcryptography.com/ciphers/adfgvx-cipher/
-8- 
+5- rotate  grid cipher http://rumkin.com/tools/cipher/rotate.php
+6- ROT13 http://practicalcryptography.com/ciphers/classical-era/rot13/
+7- keyword cipher https://en.wikipedia.org/wiki/Keyword_cipher
+8- ADFGVX cipher http://practicalcryptography.com/ciphers/adfgvx-cipher/
 9- enigma cipher http://practicalcryptography.com/ciphers/mechanical-era/enigma/
 Created by Jordan Camilletti*/
 
