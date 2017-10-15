@@ -191,23 +191,23 @@ function enigmaD(wrd,rot){//DONE
 	for(var char in wrd){
 		if(findAlph(wrd[char],alph,1)[0]-findAlph(rot[0],alph,1)[0]<0) var r1=rotor1[findAlph(wrd[char],alph,1)[0]-findAlph(rot[0],alph,1)[0]+26];
 		else var r1=rotor1[findAlph(wrd[char],alph,1)[0]-findAlph(rot[0],alph,1)[0]];//Rotor 1 reflected
-          
-		if(findAlph(r1,rotor1,1)[0]-findAlph(rot[1],alph,1)[0]<0) var r2=rotor2[findAlph(r1,rotor1,1)[0]-findAlph(rot[1],alph,1)[0]+26];
-		else var r2=rotor2[findAlph(r1,rotor1,1)[0]-findAlph(rot[1],alph,1)[0]];//Rotor 2 reflected
       
-		if(findAlph(r2,rotor2,1)[0]-findAlph(rot[2],alph,1)[0]<0) var r3=rotor3[findAlph(r2,rotor2,1)[0]-findAlph(rot[2],alph,1)[0]+26];
-		else var r3=rotor3[findAlph(r2,rotor2,1)[0]-findAlph(rot[2],alph,1)[0]];//Rotor 3 reflected
+		if(findAlph(r1,alph,1)[0]-findAlph(rot[1],alph,1)[0]<0) var r2=rotor2[findAlph(r1,alph,1)[0]-findAlph(rot[1],alph,1)[0]+26];
+		else var r2=rotor2[findAlph(r1,alph,1)[0]-findAlph(rot[1],alph,1)[0]];//Rotor 2 reflected
       
-		var refA=reflectorA[findAlph(r3,rotor3,1)[0]];//Reflector
+		if(findAlph(r2,alph,1)[0]-findAlph(rot[2],alph,1)[0]<0) var r3=rotor3[findAlph(r2,alph,1)[0]-findAlph(rot[2],alph,1)[0]+26];
+		else var r3=rotor3[findAlph(r2,alph,1)[0]-findAlph(rot[2],alph,1)[0]];//Rotor 3 reflected
       
-		if(findAlph(refA,reflectorA,1)[0]-findAlph(rot[2],alph,1)[0]<0) r3=rotor3[findAlph(refA,reflectorA,1)[0]-findAlph(rot[2],alph,1)[0]+26];
-		else r3=rotor3[findAlph(refA,reflectorA,1)[0]-findAlph(rot[2],alph,1)[0]];//Rotor 3
+		var refA=reflectorA[findAlph(r3,alph,1)[0]];//Reflector
       
-		if(findAlph(r3,rotor3,1)[0]-findAlph(rot[1],alph,1)[0]<0) r2=rotor2[findAlph(r3,rotor3,1)[0]-findAlph(rot[1],alph,1)[0]+26];
-		else r2=rotor2[findAlph(r3,rotor3,1)[0]-findAlph(rot[1],alph,1)[0]];//Rotor 2
+		if(findAlph(refA,rotor3,1)[0]-findAlph(rot[2],alph,1)[0]<0) r3=alph[findAlph(refA,rotor3,1)[0]-findAlph(rot[2],alph,1)[0]+26];
+		else r3=alph[findAlph(refA,rotor3,1)[0]-findAlph(rot[2],alph,1)[0]];//Rotor 3
       
-		if(findAlph(r2,rotor2,1)[0]-findAlph(rot[0],alph,1)[0]<0) r1=rotor1[findAlph(r2,rotor2,1)[0]-findAlph(rot[0],alph,1)[0]+26];
-		else r1=rotor1[findAlph(r2,rotor2,1)[0]-findAlph(rot[0],alph,1)[0]];//Rotor 1
+		if(findAlph(r3,rotor2,1)[0]-findAlph(rot[1],alph,1)[0]<0) r2=alph[findAlph(r3,rotor2,1)[0]-findAlph(rot[1],alph,1)[0]+26];
+		else r2=alph[findAlph(r3,rotor2,1)[0]-findAlph(rot[1],alph,1)[0]];//Rotor 2
+      
+		if(findAlph(r2,rotor1,1)[0]-findAlph(rot[0],alph,1)[0]<0) r1=alph[findAlph(r2,rotor1,1)[0]-findAlph(rot[0],alph,1)[0]+26];
+		else r1=alph[findAlph(r2,rotor1,1)[0]-findAlph(rot[0],alph,1)[0]];//Rotor 1
 		newWrd=newWrd+r1;
 	}
 	return(newWrd);
