@@ -116,6 +116,33 @@ function polybiusE(wrd){//DONE
 	return(newWrd);
 }
 
+function rotateE(wrd,rot){
+  wrd=(wrd.toUpperCase()).split("");
+  var newWrd="";
+  var x,y,xyBuff;//xyBuff is used to swap x and y
+  alph=[["A","B","C","x","D","E","F"],//'x'==middle of graph (#,0) or (0,#)
+        ["G","H","I","x","J","K","L"],
+        ["M","N","O","x","P","Q","R"],
+        ["x","x","x","x","x","x","x"],
+        ["S","T","U","x","V","W","X"],
+        ["Y","Z","0","x","1","2","3"],
+        ["4","5","6","x","7","8","9"]];
+  for(var char in wrd){
+    x=findAlph(wrd[char],alph,2)[1]-3;
+    y=findAlph(wrd[char],alph,2)[0]*-1+3;
+    //console.log("GRID: X:"+x+" Y:"+y);
+    //console.log("ARRAY: X:"+(x+3)+" Y:"+(-y+3));
+    for(var r=0;r<rot/90;r++){
+      xyBuff=-x;
+      x=y;
+      y=xyBuff;
+      //console.log("GRID: X:"+x+" Y:"+y);
+      //console.log("ARRAY: X:"+(x+3)+" Y:"+(-y+3));
+    }
+    newWrd=newWrd+alph[-y+3][x+3];
+  }
+  return(newWrd);
+}
 
 function ROT13E(wrd,rot){//DONE
 	wrd=(wrd.toUpperCase()).split("");
