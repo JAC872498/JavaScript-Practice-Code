@@ -32,7 +32,7 @@ function findAlph(letter,alph,dimensions){//this is used to find the number loca
 	return(location);
 }
 
-function sp33kE(wrd){//DONE
+function sp33kE(wrd){
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	for(var char in wrd){
@@ -55,7 +55,7 @@ function sp33kE(wrd){//DONE
 	return(newWrd);
 }
 
-function morseE(wrd){//DONE
+function morseE(wrd){
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"];
@@ -67,7 +67,7 @@ function morseE(wrd){//DONE
 	return(newWrd);
 }
 
-function pigLatinE(wrd){//DONE
+function pigLatinE(wrd){
 	wrd=(wrd.toUpperCase()).split("");
 	while(wrd[0]!="A" && wrd[0]!="E" && wrd[0]!="I" && wrd[0]!="O" && wrd[0]!="U" && wrd[0]!="Y"){
 		wrd.push(wrd[0]);
@@ -76,7 +76,7 @@ function pigLatinE(wrd){//DONE
 	return(wrd.join("")+"AY");
 }
 
-function fourSquareE(wrd,ciph1,ciph2){//DONE
+function fourSquareE(wrd,ciph1,ciph2){
 	wrd=(wrd.toUpperCase()).split("");
 	if(wrd.length%2!==0) wrd.push("X");
 	ciph1=(ciph1.toUpperCase()).match(/.{1,6}/g);
@@ -101,7 +101,7 @@ function fourSquareE(wrd,ciph1,ciph2){//DONE
 	return(newWrd);
 }
 
-function polybiusE(wrd){//DONE
+function polybiusE(wrd){
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=[["A","B","C","D","E","F"],
@@ -144,7 +144,7 @@ function rotateE(wrd,rot){
   return(newWrd);
 }
 
-function ROT13E(wrd,rot){//DONE
+function ROT13E(wrd,rot){
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var alph=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]; 
@@ -159,7 +159,7 @@ function ROT13E(wrd,rot){//DONE
 	return(newWrd);
 } 
 
-function keyWordE(wrd,keyWrd){//DONE
+function keyWordE(wrd,keyWrd){
 	wrd=(wrd.toUpperCase()).split("");
 	keyWrd=keyWrd.toUpperCase();
 	keyWrd=keyWrd.split("");
@@ -178,7 +178,7 @@ function keyWordE(wrd,keyWrd){//DONE
 	return(newWrd);
 }
 
-function ADFGVXE(wrd,keySquare,keyWrd){//DONE
+function ADFGVXE(wrd,keySquare,keyWrd){
 	wrd=(wrd.toUpperCase()).split("");
 	var newWrd="";
 	var newArr=[], columns=[];
@@ -206,7 +206,7 @@ function ADFGVXE(wrd,keySquare,keyWrd){//DONE
 	return(columns.join(""));
 }
 
-function enigmaE(wrd,rot){//DONE
+function enigmaE(wrd,rot){
 	wrd=(wrd.toUpperCase()).split("");
 	rot=(rot.toUpperCase()).split("");
 	var newWrd="";
