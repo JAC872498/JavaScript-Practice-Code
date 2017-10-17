@@ -69,6 +69,12 @@ function morseD(wrd){
 
 function pigLatinD(wrd){//NOT DONE
 	wrd=(wrd.toUpperCase()).split("");
+    if((wrd.slice(wrd.length-3,wrd.length)).join("")=="WAY"||(wrd.slice(wrd.length-3,wrd.length)).join("")=="YAY"){
+      //should start with a vowel
+      return((wrd.slice(0,wrd.length-3)).join(""));
+    }else{
+      //shouldn't start with a vowel
+    }
 }
 
 function fourSquareD(wrd,ciph1,ciph2){
