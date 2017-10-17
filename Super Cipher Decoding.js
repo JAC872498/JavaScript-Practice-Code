@@ -74,6 +74,13 @@ function pigLatinD(wrd){//NOT DONE
       return((wrd.slice(0,wrd.length-3)).join(""));
     }else{
       //shouldn't start with a vowel
+      wrd=wrd.slice(0,wrd.length-2);
+      if(wrd[wrd.length-2]=="S"||wrd[wrd.length-2]=="C"||wrd[wrd.length-2]=="T"){//Used to see if there's a multiple letter constant(ch,th,sm,st,etc)
+        if(wrd[wrd.length-1]=="M"||wrd[wrd.length-1]=="H"||wrd[wrd.length-1]=="T"){//This isn't all of them but it's enough of them
+          return(wrd.slice(wrd.length-4,wrd.length-2)+wrd.slice(0,wrd.length-4));
+        }
+      }
+      return(wrd.slice(wrd.length-3,wrd.length-2)+wrd.slice(0,wrd.length-3));
     }
 }
 
