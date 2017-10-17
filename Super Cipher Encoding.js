@@ -69,9 +69,9 @@ function morseE(wrd){
 
 function pigLatinE(wrd){
 	wrd=(wrd.toUpperCase()).split("");
-    if(wrd[0]=="A" || wrd[0]=="E" || wrd[0]=="I" || wrd[0]=="O" || wrd[0]=="U" || wrd[0]=="Y"){
-      return(wrd.join("")+"YAY");
-    }
+	if(wrd[0]=="A" || wrd[0]=="E" || wrd[0]=="I" || wrd[0]=="O" || wrd[0]=="U" || wrd[0]=="Y"){
+		return(wrd.join("")+"YAY");
+	}
 	while(wrd[0]!="A" && wrd[0]!="E" && wrd[0]!="I" && wrd[0]!="O" && wrd[0]!="U" && wrd[0]!="Y"){
 		wrd.push(wrd[0]);
 		wrd.shift();
