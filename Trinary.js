@@ -8,5 +8,6 @@ function toBase10(num){
     b10Total+=(Math.floor((num%Math.pow(10,n))/Math.pow(10,n-1)))*power;
     power*=3;
   }
+  return(b10Total);
 }
 console.log(b10Total);
