@@ -10,3 +10,12 @@ function toBase10(num){
   }
   return(b10Total);
 }
+function toBase3(num){
+  var power=1;
+  var total=0;
+  for(var n=1;n<=(num+"").length;n++){
+    total+=(Math.floor((num%Math.pow(3,n))/Math.pow(3,n-1)))*power;
+    power*=10;
+  }
+  return(total);
+}
