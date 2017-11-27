@@ -1,7 +1,8 @@
 /**/
 
-var num="123".split("");
+var num="123456789".split("");
 var numChunks=[]
 while(num.length){
-  console.log(num.splice(0,1));
+  numChunks.append(num.splice(0,3));
+  //console.log(num.splice(0,3));
 }
