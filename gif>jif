@@ -21,7 +21,7 @@ for(var chunk in numChunks){
   for(var num in numChunks[chunk]){
     wrd=numbers[num][numChunks[chunk][num]-1]+" "+wrd;
   }
-  finalWrd=finalWrd+wrd;
+  finalWrd=wrd+finalWrd;
   wrd="";
 }
 //console.log(numChunks);
