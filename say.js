@@ -13,8 +13,6 @@ var numbers=[
   ["one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"]
 ];
 var places=["","thousand","million","billion","trillion","quadrillion","quintillion","sextillion","septillion","octillion"];
-//var ones=["","one","two","three","four","five","six","seven","eight","nine"];
-//var tens=["","onety","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"];
 while(num.length){
   numChunks.push(num.splice(0,3));
 }
@@ -25,5 +23,4 @@ for(var chunk in numChunks){
   finalWrd=wrd+places[chunk]+" "+finalWrd;
   wrd="";
 }
-//console.log(numChunks);
 console.log(finalWrd);
