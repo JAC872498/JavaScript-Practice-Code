@@ -1,9 +1,22 @@
 /*http://exercism.io/exercises/javascript/say/readme*/
 
-var num="123456789".split("");
+var num="1234567849".split("");
+if(num[0]=="0"){
+  console.log("zero");
+}
+var word=""
 var numChunks=[]
+var onesNames=["zero","one","two","three","four","five","six","seven","eight","nine"];
+var tensNames=["","teen","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+var HundredsNames=["hundred","thousand","million","billion","trillion","quadrillion","quintillion","sextillion","septillion","octillion"];
 while(num.length){
   numChunks.push(num.splice(num.length-3));
-  //console.log(num.splice(0,3));
 }
 console.log(numChunks);
+for(var chunk in numChunks){
+  //console.log(numChunks[chunk]);
+  for(var number in numChunks[chunk]){
+    console.log(number);
+    //word=onesNames[0]+wrd;
+  }
+}
