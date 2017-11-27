@@ -1,4 +1,4 @@
-/**/
+/*http://exercism.io/exercises/javascript/say/readme*/
 
 var num="123456789".split("");
 var numChunks=[]
