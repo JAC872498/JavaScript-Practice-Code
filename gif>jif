@@ -8,9 +8,9 @@ var numChunks=[];
 var wrd="";
 var finalWrd="";
 var numbers=[
-  ["one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"],
-  ["","onety","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"],
-  ["","one","two","three","four","five","six","seven","eight","nine"]
+  ["one","two","three","four","five","six","seven","eight","nine"],
+  ["onety","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"],
+  ["one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred"]
 ];
 //var ones=["","one","two","three","four","five","six","seven","eight","nine"];
 //var tens=["","onety","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"];
@@ -18,12 +18,11 @@ while(num.length){
   numChunks.push(num.splice(0,3));
 }
 for(var chunk in numChunks){
-  numChunks[chunk].reverse();
   for(var num in numChunks[chunk]){
-    wrd=wrd+numbers[num][numChunks[chunk][num]];
+    wrd=numbers[num][numChunks[chunk][num]-1]+" "+wrd;
   }
-  finalWrd=wrd+finalWrd;
+  finalWrd=finalWrd+wrd;
   wrd="";
 }
-console.log(numChunks);
+//console.log(numChunks);
 console.log(finalWrd);
