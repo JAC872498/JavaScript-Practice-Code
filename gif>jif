@@ -5,18 +5,20 @@ if(num[0]=="0"){
   console.log("zero");
 }
 var word=""
+var finalWrd=""
 var numChunks=[]
-var onesNames=["zero","one","two","three","four","five","six","seven","eight","nine"];
-var tensNames=["","teen","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"];
+var onesNames=["zero ","one ","two ","three ","four ","five ","six ","seven ","eight ","nine "];
+var tensNames=["","teen ","twenty ","thirty ","fourty ","fifty ","sixty ","seventy ","eighty ","ninety "];
 var HundredsNames=["hundred","thousand","million","billion","trillion","quadrillion","quintillion","sextillion","septillion","octillion"];
 while(num.length){
   numChunks.push(num.splice(num.length-3));
 }
-console.log(numChunks);
 for(var chunk in numChunks){
-  //console.log(numChunks[chunk]);
   for(var number in numChunks[chunk]){
-    console.log(number);
-    //word=onesNames[0]+wrd;
+    console.log(numChunks[chunk][number]);
+    word+=onesNames[numChunks[chunk][number]];
   }
+  finalWrd=word+finalWrd;
+  word="";
 }
+console.log(finalWrd);
