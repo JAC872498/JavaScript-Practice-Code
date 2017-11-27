@@ -3,7 +3,7 @@
 var num="123456789".split("");
 var numChunks=[]
 while(num.length){
-  numChunks.push(num.splice(0,3));
+  numChunks.push(num.splice(num.length-3));
   //console.log(num.splice(0,3));
 }
 console.log(numChunks);
