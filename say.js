@@ -1,4 +1,5 @@
-/*http://exercism.io/exercises/javascript/say/readme*/
+/*http://exercism.io/exercises/javascript/say/readme
+This spells out a given integer in text*/
 
 var num=("1234567849".split("")).reverse();
 if(num[0]=="0"){
