@@ -1,5 +1,7 @@
-/**/ 
-
+/*https://www.geeksforgeeks.org/sum-digit-number-using-recursion/
+Plan:
+1.do the thing above
+2.do the power function below for every number under the number obtained from step one*/
 function power(n){
   if(n===0) return(0);
   if(n==1) return(1);
