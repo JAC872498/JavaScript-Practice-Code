@@ -18,5 +18,4 @@ function power(n){
   if(n==1) return(1);
   return(n*power(n-1));
 }
-n=12345;
-console.log(digitSum(n));
+console.log(digitSum(45632));
