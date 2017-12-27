@@ -2,6 +2,11 @@
 Plan:
 1.do the thing above
 2.do the power function below for every number under the number obtained from step one*/
+function totalPower(n){
+  if(n===0) return(0);
+  return(totalPower(n-1)+power(n));
+}
+
 function power(n){
   if(n===0) return(0);
   if(n==1) return(1);
