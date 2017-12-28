@@ -1,7 +1,7 @@
-/**/
+/*https://en.wikipedia.org/wiki/6174_(number)*/
 
 function KaprekarsConstant(num) { 
     var times=0;
-    var numArrD=(((""+num).split("");.sort()).reverse()
-    var numArrA=((""+num).split("")).sort();
+    var numArrD=((((""+num).split("")).sort()).reverse()).join("");
+    var numArrA=(((""+num).split("")).sort()).join("");
 }
