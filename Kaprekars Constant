@@ -1,1 +1,7 @@
 /**/
+
+function KaprekarsConstant(num) { 
+    var times=0;
+    var numArrD=(((""+num).split("");.sort()).reverse()
+    var numArrA=((""+num).split("")).sort();
+}
