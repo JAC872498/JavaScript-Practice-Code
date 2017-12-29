@@ -2,14 +2,14 @@
 
 function KapConstant(num) { 
     var times=0;
-    //while(num!=6174){
+    while(num!=6174){
         times+=1;
         var numArrD=((((""+num).split("")).sort()).reverse()).join("");
         var numArrA=(((""+num).split("")).sort()).join("");
-        numArrD*=(10*(4-(""+num).length));
-        //num=numArrD-numArrA;
+        numArrD*=(10**(4-(""+num).length));
+        num=numArrD-numArrA;
         console.log(numArrD+"X"+numArrA);
-    //}
+    }
     return(times);
 }
-KapConstant(295);
+KapConstant();
