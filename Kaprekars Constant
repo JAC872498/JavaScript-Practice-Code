@@ -8,7 +8,6 @@ function KapConstant(num) {
         var numArrA=(((""+num).split("")).sort()).join("");
         numArrD*=(Math.pow(10,(4-(""+num).length)));
         num=numArrD-numArrA;
-        console.log(numArrD+"X"+numArrA);
     }
     return(times);
 }
