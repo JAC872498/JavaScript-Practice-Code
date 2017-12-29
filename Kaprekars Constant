@@ -1,7 +1,13 @@
 /*https://en.wikipedia.org/wiki/6174_(number)*/
 
-function KaprekarsConstant(num) { 
+function KapConstant(num) { 
     var times=0;
-    var numArrD=((((""+num).split("")).sort()).reverse()).join("");
-    var numArrA=(((""+num).split("")).sort()).join("");
+    while(num!=6174){
+        times+=1;
+        var numArrD=((((""+num).split("")).sort()).reverse()).join("");
+        var numArrA=(((""+num).split("")).sort()).join("");
+        num=numArrD-numArrA;
+    }
+    return(times);
 }
+KapConstant(4123);
