@@ -7,3 +7,6 @@ cns.fillStyle="#FF0000";
 for(var n=0;n<9;n++){
   cns.fillRect(n*50,0,5,150);
 }
+for(var n=0;n<9;n++){
+	cns.fillRect(0,n*25,355,5);
+}
