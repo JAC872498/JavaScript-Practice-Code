@@ -3,10 +3,10 @@ So I made my own binary dot counter/timer
 This does require a HTML5 Canvas*/
 
 function wait(){
-var d1=new Date();
-var d2=null;
-do{d2=new Date();}
-while(d2-d1<1000);
+	var d1=new Date();
+	var d2=null;
+	do{d2=new Date();}
+	while(d2-d1<1000);
 }
 
 var count=0;
