@@ -9,7 +9,7 @@ function wait(){
   while(d2-d1<1000);
 }
 
-var count=5;
+var count=10;
 var binary;
 var canvas=document.getElementById("myCanvas");
 var cns=canvas.getContext("2d");
@@ -21,7 +21,7 @@ for(var n=0;n<9;n++){
 
 binary=(count.toString(2)).split("");
 for(b in binary){
-    cns.fillRect(355-(Math.floor(b/6)*50), 125-((b%6)*25)+5 ,45,20*binary[b]);
+    cns.fillRect((Math.floor(b/6)*50)+5, ((b%6)*25)+5 ,45,20*binary[b]);
 }
 
 /*for(var n=0;n<8;n++){
