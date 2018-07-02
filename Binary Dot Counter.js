@@ -3,13 +3,13 @@ So I made my own binary dot counter/timer
 This does require a HTML5 Canvas*/
 
 function wait(){
-	var d1=new Date();
-	var d2=null;
-	do{d2=new Date();}
-	while(d2-d1<1000);
+  var d1=new Date();
+  var d2=null;
+  do{d2=new Date();}
+  while(d2-d1<1000);
 }
 
-var count=0;
+var count=4;
 var binary;
 var canvas=document.getElementById("myCanvas");
 var cns=canvas.getContext("2d");
@@ -18,12 +18,10 @@ for(var n=0;n<9;n++){
   cns.fillRect(n*50,0,5,150);
   cns.fillRect(0,n*25,405,5);
 }
-for(var n=0;n<(count+1).toString(2).length;n++){
-	count+=1;
-    binary=(count.toString(2)).split("");
-    for(var b in binary){
-    	cns.fillRect(10,0,45,20*parseInt(b));
-    }
+
+binary=(count.toString(2)).split("");
+for(b in binary){
+    cns.fillRect((b*50)+5, (b*25)+5 ,45,20*parseInt(binary[b]));
 }
 
 /*for(var n=0;n<8;n++){
