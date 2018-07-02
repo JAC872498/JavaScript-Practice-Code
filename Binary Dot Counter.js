@@ -1,5 +1,6 @@
 /*I was slightly anoyyed that GDQ's counter was off
-So I made my own binary dot counter/timer*/
+So I made my own binary dot counter/timer
+This does require a HTML5 Canvas*/
 
 var count=0;
 var canvas=document.getElementById("myCanvas");
