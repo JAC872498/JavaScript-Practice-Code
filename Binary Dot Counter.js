@@ -9,7 +9,7 @@ function wait(){
   while(d2-d1<1000);
 }
 
-var count=10;
+//var count=11;
 var binary;
 var canvas=document.getElementById("myCanvas");
 var cns=canvas.getContext("2d");
@@ -19,9 +19,16 @@ for(var n=0;n<9;n++){
   cns.fillRect(0,n*25,405,5);
 }
 
+for(var count=0;count<9;count++){
 binary=(count.toString(2)).split("");
 for(b in binary){
-    cns.fillRect((Math.floor(b/6)*50)+5, ((b%6)*25)+5 ,45,20*binary[b]);
+	if(binary[b]==1){
+    	cns.fillStyle="#"+((1<<24)*Math.random()|0).toString(16);
+    }else{
+    	cns.fillStyle="#ffffff";
+    }
+    cns.fillRect((Math.floor(b/6)*50)+5, ((b%6)*25)+5 ,45,20);
+}
 }
 
 /*for(var n=0;n<8;n++){
