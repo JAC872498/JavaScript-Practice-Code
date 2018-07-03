@@ -9,18 +9,19 @@ function wait(){
   while(d2-d1<1000);
 }
 function update(){
+	count+=1;
 	binary=(count.toString(2)).split("");
-for(b in binary){
-	if(binary[b]==1){
-    	cns.fillStyle="#"+((1<<24)*Math.random()|0).toString(16);
-    }else{
-    	cns.fillStyle="#ffffff";
-    }
-    cns.fillRect((Math.floor(b/6)*50)+5, ((b%6)*25)+5 ,45,20);
-}
+	for(b in binary){
+      if(binary[b]==1){
+          cns.fillStyle="#"+((1<<24)*Math.random()|0).toString(16);
+      }else{
+          cns.fillStyle="#ffffff";
+      }
+      cns.fillRect((Math.floor(b/6)*50)+5, ((b%6)*25)+5 ,45,20);
+	}
 }
 
-var count=11;
+var count=2;
 var binary;
 var canvas=document.getElementById("myCanvas");
 var cns=canvas.getContext("2d");
@@ -30,4 +31,12 @@ for(var n=0;n<9;n++){
   cns.fillRect(0,n*25,405,5);
 }
 
-update();
+run=setInterval(update(),1000);
+
+
+/*for(var n=0;n<8;n++){
+	for(var n2=0;n2<6;n2++){
+    	cns.fillStyle="#"+((1<<24)*Math.random()|0).toString(16);
+        cns.fillRect((n*50)+5,(n2*25)+5,45,20);
+	}
+}*/
