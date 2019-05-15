@@ -2,6 +2,9 @@
 */
 
 def merge(list1, list2, rtnList){
+  if(list1==[] && list2==[]){
+     return(rtnList);
+  }
   return(merge(list1,list2,rtnList));
 }
 var finalList=[];
