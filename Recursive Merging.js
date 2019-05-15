@@ -1,5 +1,4 @@
-/*
-*/
+/*A little recursive method I created do combine 2 lists recursively.*/
 
 def merge(list1, list2, rtnList){
   if(list1==[] && list2==[]){
