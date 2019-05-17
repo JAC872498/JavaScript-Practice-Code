@@ -1,6 +1,6 @@
 /*A little recursive method I created do combine 2 lists recursively.*/
 
-def merge(list1, list2, rtnList){
+function merge(list1, list2, rtnList){
   if(list1==[] && list2==[]){
      return(rtnList);
   }
@@ -10,4 +10,4 @@ def merge(list1, list2, rtnList){
 var finalList=[];
 var list1;
 var list2;
-console.log(merge(list1,list2,[]));
+console.log(merge(list1,list2,finalList));
