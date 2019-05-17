@@ -3,6 +3,8 @@
 function merge(list1, list2, rtnList){
   if(list1.length==0 && list2.length==0){
      return(rtnList);
+  }else if(list1.length==0){
+  }else{
   }
   return(merge(list1,list2,rtnList));
 }
