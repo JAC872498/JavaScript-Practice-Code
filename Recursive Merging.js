@@ -1,7 +1,7 @@
 /*A little recursive method I created do combine 2 lists recursively.*/
 
 function merge(list1, list2, rtnList){
-  if(list1==[] && list2==[]){
+  if(list1.length==0 && list2.length==0){
      return(rtnList);
   }
   return(merge(list1,list2,rtnList));
