@@ -8,6 +8,6 @@ function merge(list1, list2, rtnList){
 }
 
 var finalList=[];
-var list1;
-var list2;
+var list1=[1,2,3];
+var list2=[4,5,6];
 console.log(merge(list1,list2,finalList));
