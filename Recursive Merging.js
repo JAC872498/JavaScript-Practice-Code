@@ -14,6 +14,6 @@ function merge(list1, list2, rtnList){
 }
 
 var finalList=[];
-var list1=[1,2,3];
-var list2=[4,5,6];
+var list1=prompt("Enter list 1").split(",");
+var list2=prompt("Enter list 2").split(",");
 console.log(merge(list1,list2,finalList));
