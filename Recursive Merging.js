@@ -6,7 +6,7 @@ function merge(list1, list2, rtnList){
   }else if(list1.length!=0){//List 1 not empty
     rtnList.push(list1[0]);
     list1.shift();
-  }else{//List 1 empty and 
+  }else{//List 1 empty and list 2 not empty
     rtnList.push(list2[0]);
     list2.shift();
   }
