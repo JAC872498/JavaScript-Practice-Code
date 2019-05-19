@@ -16,4 +16,4 @@ function merge(list1, list2, rtnList){
 var finalList=[];
 var list1=prompt("Enter list 1").split(",");
 var list2=prompt("Enter list 2").split(",");
-console.log(merge(list1,list2,finalList));
+alert(merge(list1,list2,finalList));
