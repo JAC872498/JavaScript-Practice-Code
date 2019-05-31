@@ -1,6 +1,6 @@
 /*A little recursive method I created do combine 2 lists recursively.*/
 
-function merge(list1, list2, rtnList){
+function merge(list1, list2, rtnList){//Main merge method
   if(list1.length==0 && list2.length==0){//Both lists empty
      return(rtnList);
   }else if(list1.length!=0){//List 1 not empty
